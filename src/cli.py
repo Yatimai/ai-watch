@@ -20,7 +20,7 @@ async def run_pipeline() -> None:
     logger.info("Starting pipeline for %s", today)
 
     graph = compile_graph()
-    result = await graph.ainvoke({})
+    result = await graph.ainvoke({"today": today})
 
     duration = time.time() - start
 

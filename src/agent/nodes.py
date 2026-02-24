@@ -260,7 +260,10 @@ async def enrich_and_brief(state: AgentState) -> AgentState:
     # Build messages
     messages = [
         SystemMessage(content=prompt_text),
-        HumanMessage(content=f"<items>\n{items_text}\n</items>\n\n{warning_text}"),
+        HumanMessage(
+            content=f"Date du jour : {state.get('today', 'inconnue')}\n\n"
+            f"<items>\n{items_text}\n</items>\n\n{warning_text}"
+        ),
     ]
 
     # Build item lookup for enrichment logging

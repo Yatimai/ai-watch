@@ -22,6 +22,7 @@ class AgentState(TypedDict, total=False):
     briefing_markdown: str
 
     # Metadata
+    today: str  # YYYY-MM-DD, injected by cli.py
     sources_status: dict[str, str]  # {"huggingface": "ok", "github": "error: ..."}
     llm_calls: int
     total_tokens: int
