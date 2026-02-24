@@ -1,0 +1,38 @@
+name: Daily Briefing
+
+on:
+  schedule:
+    - cron: '0 7 * * *'  # 7h UTC chaque jour
+  workflow_dispatch:      # permet de lancer manuellement
+
+jobs:
+  run-agent:
+    name: Generate Daily Briefing
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e .
+
+      - name: Run agent
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python -m src.cli run
+
+      - name: Commit and push briefing
+        run: |
+          set -e
+          git config user.name "Paper Pulse Bot"
+          git config user.email "bot@paper-pulse.dev"
+          git add briefings/
+          git diff --staged --quiet || git commit -m "📰 Briefing $(date +%Y-%m-%d)"
+          git push
