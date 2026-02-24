@@ -1,0 +1,29 @@
+# AI Watch — Configuration
+# Les clés API sont en variables d'environnement, pas ici.
+
+# LLM
+llm_model: "claude-sonnet-4-20250514"
+
+# Sources
+sources:
+  huggingface:
+    enabled: true
+    api_url: "https://huggingface.co/api/daily_papers"
+    top_k: 3
+
+  github_trending:
+    enabled: true
+    url: "https://github.com/trending"
+    since: "daily"
+    top_k: 3
+
+  simon_willison:
+    enabled: true
+    feed_url: "https://simonwillison.net/atom/everything/"
+    top_k: 3
+
+# Agent
+scrape_timeout: 30
+
+# Output
+briefings_dir: "briefings"
