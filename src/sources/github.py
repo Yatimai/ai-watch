@@ -28,7 +28,7 @@ async def fetch_github_trending(timeout: int = 30) -> list[Item]:
         if not h2:
             continue
 
-        repo_path = h2.get("href", "").strip("/")
+        repo_path = str(h2.get("href", "")).strip("/")
         parts = repo_path.split("/")
         if len(parts) != 2:
             continue

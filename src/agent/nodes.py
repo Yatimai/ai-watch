@@ -29,7 +29,7 @@ PROMPTS_DIR = Path(__file__).parent.parent.parent / "prompts"
 
 def _get_llm() -> ChatAnthropic:
     config = load_config()
-    return ChatAnthropic(
+    return ChatAnthropic(  # type: ignore[call-arg]
         model=config["llm_model"],
         api_key=config["anthropic_api_key"],
         max_tokens=4096,

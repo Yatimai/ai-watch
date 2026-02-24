@@ -73,7 +73,12 @@ async def search_hf_models(query: str) -> str:
     Use this when a paper mentions a model and you want concrete details.
     """
     url = "https://huggingface.co/api/models"
-    params = {"search": query, "limit": 3, "sort": "downloads", "direction": -1}
+    params: dict[str, str | int] = {
+        "search": query,
+        "limit": 3,
+        "sort": "downloads",
+        "direction": -1,
+    }
 
     async with httpx.AsyncClient(timeout=30) as client:
         response = await client.get(url, params=params)

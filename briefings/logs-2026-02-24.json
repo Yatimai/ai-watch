@@ -40,6 +40,6 @@
     }
   ],
   "llm_calls": 2,
-  "total_tokens": 11765,
-  "duration_seconds": 60.33055663108826
+  "total_tokens": 11791,
+  "duration_seconds": 51.56276750564575
 }
