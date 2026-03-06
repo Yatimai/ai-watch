@@ -1,0 +1,53 @@
+{
+  "date": "2026-03-06",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "moeru-ai/airi",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'moeru-ai', 'repo': 'airi'})"
+    },
+    {
+      "item_title": "KeygraphHQ/shannon",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'KeygraphHQ', 'repo': 'shannon'})"
+    },
+    {
+      "item_title": "msitarzewski/agency-agents",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'msitarzewski', 'repo': 'agency-agents'})"
+    },
+    {
+      "item_title": "Clinejection — Compromising Cline's Production Releases just by Prompting an Issue Triager",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Mar/6/clinejection/#atom-everything'})"
+    },
+    {
+      "item_title": "Introducing GPT‑5.4",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Mar/5/introducing-gpt54/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12871,
+  "duration_seconds": 42.43797039985657
+}
