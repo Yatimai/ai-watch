@@ -1,0 +1,77 @@
+{
+  "date": "2026-03-17",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "{'query': 'OpenSeeker search agent'}",
+      "source": "huggingface",
+      "tools_called": [
+        "search_hf_models"
+      ],
+      "reason": "search_hf_models({'query': 'OpenSeeker search agent'})"
+    },
+    {
+      "item_title": "{'query': 'Scientific Judge Scientific Thinker'}",
+      "source": "huggingface",
+      "tools_called": [
+        "search_hf_models"
+      ],
+      "reason": "search_hf_models({'query': 'Scientific Judge Scientific Thinker'})"
+    },
+    {
+      "item_title": "666ghj/MiroFish",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': '666ghj', 'repo': 'MiroFish'})"
+    },
+    {
+      "item_title": "obra/superpowers",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'obra', 'repo': 'superpowers'})"
+    },
+    {
+      "item_title": "lightpanda-io/browser",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'lightpanda-io', 'repo': 'browser'})"
+    },
+    {
+      "item_title": "Introducing Mistral Small 4",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Mar/16/mistral-small-4/#atom-everything'})"
+    },
+    {
+      "item_title": "Use subagents and custom agents in Codex",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Mar/16/codex-subagents/#atom-everything'})"
+    },
+    {
+      "item_title": "Quoting A member of Anthropic’s alignment-science team",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Mar/16/blackmail/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 13478,
+  "duration_seconds": 48.92243957519531
+}
