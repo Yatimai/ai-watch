@@ -1,0 +1,69 @@
+{
+  "date": "2026-03-19",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "{'query': 'InCoder-32B code foundation model'}",
+      "source": "huggingface",
+      "tools_called": [
+        "search_hf_models"
+      ],
+      "reason": "search_hf_models({'query': 'InCoder-32B code foundation model'})"
+    },
+    {
+      "item_title": "{'query': 'Qianfan-OCR document intelligence'}",
+      "source": "huggingface",
+      "tools_called": [
+        "search_hf_models"
+      ],
+      "reason": "search_hf_models({'query': 'Qianfan-OCR document intelligence'})"
+    },
+    {
+      "item_title": "obra/superpowers",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'obra', 'repo': 'superpowers'})"
+    },
+    {
+      "item_title": "jarrodwatts/claude-hud",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'jarrodwatts', 'repo': 'claude-hud'})"
+    },
+    {
+      "item_title": "unslothai/unsloth",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'unslothai', 'repo': 'unsloth'})"
+    },
+    {
+      "item_title": "Autoresearching Apple's \"LLM in a Flash\" to run Qwen 397B locally",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Mar/18/llm-in-a-flash/#atom-everything'})"
+    },
+    {
+      "item_title": "Snowflake Cortex AI Escapes Sandbox and Executes Malware",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Mar/18/snowflake-cortex-ai/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12470,
+  "duration_seconds": 43.57318043708801
+}
