@@ -1,0 +1,45 @@
+{
+  "date": "2026-03-21",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "obra/superpowers",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'obra', 'repo': 'superpowers'})"
+    },
+    {
+      "item_title": "opendataloader-project/opendataloader-pdf",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'opendataloader-project', 'repo': 'opendataloader-pdf'})"
+    },
+    {
+      "item_title": "Turbo Pascal 3.02A, deconstructed",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Mar/20/turbo-pascal/#atom-everything'})"
+    },
+    {
+      "item_title": "Thoughts on OpenAI acquiring Astral and uv/ruff/ty",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Mar/19/openai-acquiring-astral/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 11025,
+  "duration_seconds": 39.31734871864319
+}
