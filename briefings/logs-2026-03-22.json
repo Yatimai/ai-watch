@@ -1,0 +1,45 @@
+{
+  "date": "2026-03-22",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "Crosstalk-Solutions/project-nomad",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'Crosstalk-Solutions', 'repo': 'project-nomad'})"
+    },
+    {
+      "item_title": "jarrodwatts/claude-hud",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'jarrodwatts', 'repo': 'claude-hud'})"
+    },
+    {
+      "item_title": "Profiling Hacker News users based on their comments",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Mar/21/profiling-hacker-news-users/#atom-everything'})"
+    },
+    {
+      "item_title": "Turbo Pascal 3.02A, deconstructed",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Mar/20/turbo-pascal/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 11355,
+  "duration_seconds": 42.65306997299194
+}
