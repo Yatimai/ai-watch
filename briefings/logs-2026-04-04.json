@@ -1,0 +1,69 @@
+{
+  "date": "2026-04-04",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "Yeachan-Heo/oh-my-codex",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'Yeachan-Heo', 'repo': 'oh-my-codex'})"
+    },
+    {
+      "item_title": "onyx-dot-app/onyx",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'onyx-dot-app', 'repo': 'onyx'})"
+    },
+    {
+      "item_title": "google-research/timesfm",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'google-research', 'repo': 'timesfm'})"
+    },
+    {
+      "item_title": "Quoting Kyle Daigle",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Apr/4/kyle-daigle/#atom-everything'})"
+    },
+    {
+      "item_title": "Vulnerability Research Is Cooked",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Apr/3/vulnerability-research-is-cooked/#atom-everything'})"
+    },
+    {
+      "item_title": "The cognitive impact of coding agents",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Apr/3/cognitive-cost/#atom-everything'})"
+    },
+    {
+      "item_title": "{'query': 'DataFlex LLaMA-Factory data-centric training'}",
+      "source": "huggingface",
+      "tools_called": [
+        "search_hf_models"
+      ],
+      "reason": "search_hf_models({'query': 'DataFlex LLaMA-Factory data-centric training'})"
+    }
+  ],
+  "llm_calls": 4,
+  "total_tokens": 27510,
+  "duration_seconds": 53.14836025238037
+}
