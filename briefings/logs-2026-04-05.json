@@ -1,0 +1,45 @@
+{
+  "date": "2026-04-05",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "Yeachan-Heo/oh-my-codex",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'Yeachan-Heo', 'repo': 'oh-my-codex'})"
+    },
+    {
+      "item_title": "onyx-dot-app/onyx",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'onyx-dot-app', 'repo': 'onyx'})"
+    },
+    {
+      "item_title": "block/goose",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'block', 'repo': 'goose'})"
+    },
+    {
+      "item_title": "scan-for-secrets 0.1",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Apr/5/scan-for-secrets-3/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 11655,
+  "duration_seconds": 40.13555574417114
+}
