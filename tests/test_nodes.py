@@ -540,7 +540,7 @@ class TestEnrichAndBrief:
     async def test_empty_items_returns_fallback(self):
         state: AgentState = {"items_to_enrich": []}
         result = await enrich_and_brief(state)
-        assert "Aucun item disponible" in result["briefing_markdown"]
+        assert "No items available today" in result["briefing_markdown"]
         assert result["enrichment_logs"] == []
 
     async def test_with_items_no_tool_calls(self, hf_item: Item, gh_item: Item, simon_item: Item):

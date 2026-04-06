@@ -82,6 +82,11 @@ markers = [
     "slow: marks tests as slow",
     "integration: marks integration tests",
 ]
+filterwarnings = [
+    # langchain @tool wrapper + AsyncMock httpx triggers an internal to_thread coroutine
+    # that langchain doesn't await. Cosmetic, prod code is unaffected.
+    "ignore:coroutine 'to_thread' was never awaited:RuntimeWarning",
+]
 
 # -------------------------------------------------------------------
 # Coverage
