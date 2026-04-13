@@ -1,0 +1,53 @@
+{
+  "date": "2026-04-13",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "NousResearch/hermes-agent",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'NousResearch', 'repo': 'hermes-agent'})"
+    },
+    {
+      "item_title": "forrestchang/andrej-karpathy-skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'forrestchang', 'repo': 'andrej-karpathy-skills'})"
+    },
+    {
+      "item_title": "shiyu-coder/Kronos",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'shiyu-coder', 'repo': 'Kronos'})"
+    },
+    {
+      "item_title": "Quoting Bryan Cantrill",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Apr/13/bryan-cantrill/#atom-everything'})"
+    },
+    {
+      "item_title": "Gemma 4 audio with MLX",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Apr/12/mlx-audio/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 9768,
+  "duration_seconds": 46.808637380599976
+}
