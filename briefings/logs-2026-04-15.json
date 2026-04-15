@@ -1,0 +1,37 @@
+{
+  "date": "2026-04-15",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "forrestchang/andrej-karpathy-skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'forrestchang', 'repo': 'andrej-karpathy-skills'})"
+    },
+    {
+      "item_title": "NousResearch/hermes-agent",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'NousResearch', 'repo': 'hermes-agent'})"
+    },
+    {
+      "item_title": "Trusted access for the next era of cyber defense",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Apr/14/trusted-access-openai/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 10202,
+  "duration_seconds": 34.843804121017456
+}
