@@ -1,0 +1,53 @@
+{
+  "date": "2026-04-16",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "forrestchang/andrej-karpathy-skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'forrestchang', 'repo': 'andrej-karpathy-skills'})"
+    },
+    {
+      "item_title": "thedotmack/claude-mem",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'thedotmack', 'repo': 'claude-mem'})"
+    },
+    {
+      "item_title": "obra/superpowers",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'obra', 'repo': 'superpowers'})"
+    },
+    {
+      "item_title": "datasette.io news preview",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Apr/16/datasette-io-preview/#atom-everything'})"
+    },
+    {
+      "item_title": "datasette 1.0a27",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Apr/15/datasette/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12652,
+  "duration_seconds": 44.813679218292236
+}
