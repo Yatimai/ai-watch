@@ -1,0 +1,53 @@
+{
+  "date": "2026-04-17",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "forrestchang/andrej-karpathy-skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'forrestchang', 'repo': 'andrej-karpathy-skills'})"
+    },
+    {
+      "item_title": "thedotmack/claude-mem",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'thedotmack', 'repo': 'claude-mem'})"
+    },
+    {
+      "item_title": "Lordog/dive-into-llms",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'Lordog', 'repo': 'dive-into-llms'})"
+    },
+    {
+      "item_title": "datasette 1.0a28",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Apr/17/datasette/#atom-everything'})"
+    },
+    {
+      "item_title": "Qwen3.6-35B-A3B on my laptop drew me a better pelican than Claude Opus 4.7",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Apr/16/qwen-beats-opus/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 13574,
+  "duration_seconds": 48.100208044052124
+}
