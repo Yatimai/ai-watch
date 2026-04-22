@@ -48,9 +48,9 @@ Prompts are in `/prompts/`.
 ## Agent Tools
 
 The enrichment agent has 3 tools:
-- `fetch_url(url)` — read a web page (httpx)
-- `search_hf_models(query)` — search a model on HuggingFace Hub (API)
-- `get_github_repo(owner, repo)` — read README, stars, activity (GitHub API)
+- `fetch_url(url)` : read a web page (httpx)
+- `search_hf_models(query)` : search a model on HuggingFace Hub (API)
+- `get_github_repo(owner, repo)` : read README, stars, activity (GitHub API)
 
 The agent decides which tools to call based on each item's content.
 
