@@ -1,0 +1,53 @@
+{
+  "date": "2026-04-22",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "ruvnet/RuView",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'ruvnet', 'repo': 'RuView'})"
+    },
+    {
+      "item_title": "thunderbird/thunderbolt",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'thunderbird', 'repo': 'thunderbolt'})"
+    },
+    {
+      "item_title": "Quoting Bobby Holley",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Apr/22/bobby-holley/#atom-everything'})"
+    },
+    {
+      "item_title": "Changes to GitHub Copilot Individual plans",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Apr/22/changes-to-github-copilot/#atom-everything'})"
+    },
+    {
+      "item_title": "Is Claude Code going to cost $100/month? Probably not - it's all very confusing",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Apr/22/claude-code-confusion/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12770,
+  "duration_seconds": 45.52133321762085
+}
