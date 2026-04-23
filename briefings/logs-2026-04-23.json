@@ -1,0 +1,61 @@
+{
+  "date": "2026-04-23",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "LLaDA2.0-Uni: Unifying Multimodal Understanding and Generation with Diffusion Large Language Model",
+      "source": "huggingface",
+      "tools_called": [
+        "search_hf_models"
+      ],
+      "reason": "search_hf_models({'query': 'LLaDA2.0-Uni'})"
+    },
+    {
+      "item_title": "zilliztech/claude-context",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'zilliztech', 'repo': 'claude-context'})"
+    },
+    {
+      "item_title": "HKUDS/RAG-Anything",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'HKUDS', 'repo': 'RAG-Anything'})"
+    },
+    {
+      "item_title": "Qwen3.6-27B: Flagship-Level Coding in a 27B Dense Model",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Apr/22/qwen36-27b/#atom-everything'})"
+    },
+    {
+      "item_title": "Quoting Bobby Holley",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Apr/22/bobby-holley/#atom-everything'})"
+    },
+    {
+      "item_title": "Changes to GitHub Copilot Individual plans",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Apr/22/changes-to-github-copilot/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 13372,
+  "duration_seconds": 47.13752245903015
+}
