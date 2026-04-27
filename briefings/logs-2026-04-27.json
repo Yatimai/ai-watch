@@ -1,0 +1,45 @@
+{
+  "date": "2026-04-27",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "mattpocock/skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'mattpocock', 'repo': 'skills'})"
+    },
+    {
+      "item_title": "Alishahryar1/free-claude-code",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'Alishahryar1', 'repo': 'free-claude-code'})"
+    },
+    {
+      "item_title": "WHY ARE YOU LIKE THIS",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Apr/25/why-are-you-like-this/#atom-everything'})"
+    },
+    {
+      "item_title": "GPT-5.5 prompting guide",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Apr/25/gpt-5-5-prompting-guide/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 11270,
+  "duration_seconds": 44.187366008758545
+}
