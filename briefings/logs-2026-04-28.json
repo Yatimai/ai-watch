@@ -1,0 +1,61 @@
+{
+  "date": "2026-04-28",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "mattpocock/skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'mattpocock', 'repo': 'skills'})"
+    },
+    {
+      "item_title": "Alishahryar1/free-claude-code",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'Alishahryar1', 'repo': 'free-claude-code'})"
+    },
+    {
+      "item_title": "abhigyanpatwari/GitNexus",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'abhigyanpatwari', 'repo': 'GitNexus'})"
+    },
+    {
+      "item_title": "What's new in pip 26.1 - lockfiles and dependency cooldowns!",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Apr/28/pip-261/#atom-everything'})"
+    },
+    {
+      "item_title": "Introducing talkie: a 13B vintage language model from 1930",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Apr/28/talkie/#atom-everything'})"
+    },
+    {
+      "item_title": "{'query': 'VibeVoice Microsoft speech-to-text'}",
+      "source": "huggingface",
+      "tools_called": [
+        "search_hf_models"
+      ],
+      "reason": "search_hf_models({'query': 'VibeVoice Microsoft speech-to-text'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12445,
+  "duration_seconds": 48.32780742645264
+}
