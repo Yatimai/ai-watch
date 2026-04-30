@@ -1,0 +1,53 @@
+{
+  "date": "2026-04-30",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "warpdotdev/warp",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'warpdotdev', 'repo': 'warp'})"
+    },
+    {
+      "item_title": "mattpocock/skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'mattpocock', 'repo': 'skills'})"
+    },
+    {
+      "item_title": "microsoft/VibeVoice",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'microsoft', 'repo': 'VibeVoice'})"
+    },
+    {
+      "item_title": "The Zig project's rationale for their firm anti-AI contribution policy",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Apr/30/zig-anti-ai/#atom-everything'})"
+    },
+    {
+      "item_title": "LLM 0.32a0  is a major backwards-compatible refactor",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Apr/29/llm/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12713,
+  "duration_seconds": 45.58400821685791
+}
