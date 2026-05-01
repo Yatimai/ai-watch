@@ -1,0 +1,53 @@
+{
+  "date": "2026-05-01",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "GLM-5V-Turbo: Toward a Native Foundation Model for Multimodal Agents",
+      "source": "huggingface",
+      "tools_called": [
+        "search_hf_models"
+      ],
+      "reason": "search_hf_models({'query': 'GLM-5V-Turbo'})"
+    },
+    {
+      "item_title": "mattpocock/skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'mattpocock', 'repo': 'skills'})"
+    },
+    {
+      "item_title": "TauricResearch/TradingAgents",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'TauricResearch', 'repo': 'TradingAgents'})"
+    },
+    {
+      "item_title": "Codex CLI 0.128.0 adds /goal",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Apr/30/codex-goals/#atom-everything'})"
+    },
+    {
+      "item_title": "Our evaluation of OpenAI's GPT-5.5 cyber capabilities",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Apr/30/gpt-55-cyber-capabilities/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 10819,
+  "duration_seconds": 37.725931882858276
+}
