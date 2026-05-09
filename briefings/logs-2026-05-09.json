@@ -1,0 +1,53 @@
+{
+  "date": "2026-05-09",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "Hmbown/DeepSeek-TUI",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'Hmbown', 'repo': 'DeepSeek-TUI'})"
+    },
+    {
+      "item_title": "anthropics/financial-services",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'anthropics', 'repo': 'financial-services'})"
+    },
+    {
+      "item_title": "addyosmani/agent-skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'addyosmani', 'repo': 'agent-skills'})"
+    },
+    {
+      "item_title": "Quoting Luke Curley",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/May/9/luke-curley/#atom-everything'})"
+    },
+    {
+      "item_title": "Using Claude Code: The Unreasonable Effectiveness of HTML",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/May/8/unreasonable-effectiveness-of-html/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12209,
+  "duration_seconds": 42.38203191757202
+}
