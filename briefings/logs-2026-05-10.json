@@ -1,0 +1,45 @@
+{
+  "date": "2026-05-10",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "anthropics/financial-services",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'anthropics', 'repo': 'financial-services'})"
+    },
+    {
+      "item_title": "MiniCPM-o 4.5: Towards Real-Time Full-Duplex Omni-Modal Interaction",
+      "source": "huggingface",
+      "tools_called": [
+        "search_hf_models"
+      ],
+      "reason": "search_hf_models({'query': 'MiniCPM-o'})"
+    },
+    {
+      "item_title": "Quoting Luke Curley",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/May/9/luke-curley/#atom-everything'})"
+    },
+    {
+      "item_title": "Using Claude Code: The Unreasonable Effectiveness of HTML",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/May/8/unreasonable-effectiveness-of-html/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 10743,
+  "duration_seconds": 36.09080266952515
+}
