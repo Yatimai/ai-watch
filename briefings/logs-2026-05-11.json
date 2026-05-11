@@ -1,0 +1,45 @@
+{
+  "date": "2026-05-11",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "anthropics/financial-services",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'anthropics', 'repo': 'financial-services'})"
+    },
+    {
+      "item_title": "Quoting New York Times Editors’ Note",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/May/10/new-york-times-editors-note/#atom-everything'})"
+    },
+    {
+      "item_title": "Quoting Andrew Quinn",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/May/10/andrew-quinn/#atom-everything'})"
+    },
+    {
+      "item_title": "Quoting Luke Curley",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/May/9/luke-curley/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 11029,
+  "duration_seconds": 40.60787272453308
+}
