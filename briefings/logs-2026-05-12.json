@@ -1,0 +1,61 @@
+{
+  "date": "2026-05-12",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "NousResearch/hermes-agent",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'NousResearch', 'repo': 'hermes-agent'})"
+    },
+    {
+      "item_title": "bytedance/UI-TARS-desktop",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'bytedance', 'repo': 'UI-TARS-desktop'})"
+    },
+    {
+      "item_title": "decolua/9router",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'decolua', 'repo': '9router'})"
+    },
+    {
+      "item_title": "Thoughts on GitLab's workforce reduction\" and \"structural and strategic decisions\"",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/May/11/gitlab-act-2/#atom-everything'})"
+    },
+    {
+      "item_title": "Quoting James Shore",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/May/11/james-shore/#atom-everything'})"
+    },
+    {
+      "item_title": "Your AI Use Is Breaking My Brain",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/May/11/zombie-internet/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 13464,
+  "duration_seconds": 46.9520149230957
+}
