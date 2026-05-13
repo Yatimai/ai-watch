@@ -1,0 +1,61 @@
+{
+  "date": "2026-05-13",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "SenseNova-U1: Unifying Multimodal Understanding and Generation with NEO-unify Architecture",
+      "source": "huggingface",
+      "tools_called": [
+        "search_hf_models"
+      ],
+      "reason": "search_hf_models({'query': 'SenseNova-U1'})"
+    },
+    {
+      "item_title": "mattpocock/skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'mattpocock', 'repo': 'skills'})"
+    },
+    {
+      "item_title": "yikart/AiToEarn",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'yikart', 'repo': 'AiToEarn'})"
+    },
+    {
+      "item_title": "rohitg00/agentmemory",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'rohitg00', 'repo': 'agentmemory'})"
+    },
+    {
+      "item_title": "CSP Allow-list Experiment",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/May/13/csp-allow/#atom-everything'})"
+    },
+    {
+      "item_title": "Quoting Mo Bitar",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/May/12/mo-bitar/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12708,
+  "duration_seconds": 43.32230567932129
+}
