@@ -1,0 +1,61 @@
+{
+  "date": "2026-05-15",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "tinyhumansai/openhuman",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'tinyhumansai', 'repo': 'openhuman'})"
+    },
+    {
+      "item_title": "mattpocock/skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'mattpocock', 'repo': 'skills'})"
+    },
+    {
+      "item_title": "rohitg00/agentmemory",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'rohitg00', 'repo': 'agentmemory'})"
+    },
+    {
+      "item_title": "Not so locked in any more",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/May/14/not-so-locked-in/#atom-everything'})"
+    },
+    {
+      "item_title": "Quoting Mitchell Hashimoto",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/May/14/mitchell-hashimoto/#atom-everything'})"
+    },
+    {
+      "item_title": "datasette-ip-rate-limit 0.1a0",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/May/14/datasette-ip-rate-limit/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12723,
+  "duration_seconds": 46.04085397720337
+}
