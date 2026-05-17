@@ -1,0 +1,53 @@
+{
+  "date": "2026-05-17",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "tinyhumansai/openhuman",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'tinyhumansai', 'repo': 'openhuman'})"
+    },
+    {
+      "item_title": "obra/superpowers",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'obra', 'repo': 'superpowers'})"
+    },
+    {
+      "item_title": "ruvnet/RuView",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'ruvnet', 'repo': 'RuView'})"
+    },
+    {
+      "item_title": "Warelay -> OpenClaw",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/May/16/openclaw-names/#atom-everything'})"
+    },
+    {
+      "item_title": "inaturalist-clumper 0.1",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/May/15/inaturalist-clumper/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12314,
+  "duration_seconds": 39.61002516746521
+}
