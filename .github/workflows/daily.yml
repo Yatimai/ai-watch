@@ -28,6 +28,11 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python -m src.cli run
 
+      - name: Verify briefing was produced
+        run: |
+          f="briefings/briefing-$(date -u +%Y-%m-%d).md"
+          test -s "$f" || { echo "::error::briefing file missing or empty: $f"; exit 1; }
+
       - name: Commit and push briefing
         run: |
           set -e
