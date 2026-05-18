@@ -9,6 +9,7 @@ import markdown
 
 BRIEFINGS_DIR = Path("briefings")
 OUTPUT_DIR = Path("_site")
+INDEX_LIMIT = 7
 
 # ---------------------------------------------------------------------------
 # Styles
@@ -57,11 +58,14 @@ article a { color: var(--accent); }
 .back { display: inline-block; margin-bottom: 1.5rem; color: var(--muted);
         font-size: 0.875rem; }
 .back:hover { color: var(--accent); }
+.archive-link { margin-top: 1.5rem; text-align: right; font-size: 0.9rem; }
 """
 
 
-def html_page(title: str, body: str, back: bool = False) -> str:
-    back_link = '<a class="back" href="./">&larr; All briefings</a>' if back else ""
+def html_page(title: str, body: str, back: tuple[str, str] | None = None) -> str:
+    back_link = (
+        f'<a class="back" href="{back[0]}">&larr; {back[1]}</a>' if back else ""
+    )
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -131,33 +135,59 @@ def build():
         page = html_page(
             title=f"AI Watch — {slug}",
             body=f"<article>{html_content}</article>",
-            back=True,
+            back=("./", "Home"),
         )
         (OUTPUT_DIR / f"{slug}.html").write_text(page)
 
-    # Build index
-    latest = briefings[0]["date"].strftime("%Y-%m-%d")
-    items_html = ""
-    for b in briefings:
-        slug = b["date"].strftime("%Y-%m-%d")
-        nice_date = format_date_en(b["date"])
-        n_items = count_items(b["text"])
-        items_html += f"""<li><a href="{slug}.html">
+    def render_list(items: list[dict]) -> str:
+        html = ""
+        for b in items:
+            slug = b["date"].strftime("%Y-%m-%d")
+            nice_date = format_date_en(b["date"])
+            n_items = count_items(b["text"])
+            html += f"""<li><a href="{slug}.html">
             <div class="briefing-date">{nice_date}</div>
             <div class="briefing-sub">{n_items} items covered</div>
         </a></li>\n"""
+        return html
 
-    body = f"""<header>
+    latest = briefings[0]["date"].strftime("%Y-%m-%d")
+    has_archive = len(briefings) > INDEX_LIMIT
+
+    # Build index (latest only)
+    archive_link_html = (
+        '<p class="archive-link"><a href="archive.html">Full archive &rarr;</a></p>'
+        if has_archive
+        else ""
+    )
+    index_body = f"""<header>
     <h1><span>AI Watch</span></h1>
     <p>Automated daily AI briefing — HuggingFace Papers, GitHub Trending, Simon Willison</p>
     <div class="status">Latest briefing: {latest}</div>
 </header>
 <ul class="briefing-list">
-{items_html}
-</ul>"""
+{render_list(briefings[:INDEX_LIMIT])}
+</ul>
+{archive_link_html}"""
 
-    index = html_page(title="AI Watch — Daily AI Briefing", body=body)
+    index = html_page(title="AI Watch — Daily AI Briefing", body=index_body)
     (OUTPUT_DIR / "index.html").write_text(index)
+
+    # Build full archive
+    if has_archive:
+        archive_body = f"""<header>
+    <h1><span>AI Watch</span> — Archive</h1>
+    <p>Every briefing, oldest at the bottom.</p>
+</header>
+<ul class="briefing-list">
+{render_list(briefings)}
+</ul>"""
+        archive = html_page(
+            title="AI Watch — Full archive",
+            body=archive_body,
+            back=("./", "Home"),
+        )
+        (OUTPUT_DIR / "archive.html").write_text(archive)
 
     print(f"Built {len(briefings)} briefing(s) → _site/")
 
