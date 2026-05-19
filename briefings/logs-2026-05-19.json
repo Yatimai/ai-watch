@@ -1,0 +1,53 @@
+{
+  "date": "2026-05-19",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "tinyhumansai/openhuman",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'tinyhumansai', 'repo': 'openhuman'})"
+    },
+    {
+      "item_title": "Imbad0202/academic-research-skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'Imbad0202', 'repo': 'academic-research-skills'})"
+    },
+    {
+      "item_title": "tech-leads-club/agent-skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'tech-leads-club', 'repo': 'agent-skills'})"
+    },
+    {
+      "item_title": "The last six months in LLMs in five minutes",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/May/19/5-minute-llms/#atom-everything'})"
+    },
+    {
+      "item_title": "GDS weighs in on the NHS's decision to retreat from Open Source",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/May/17/gds-weighs-in/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12858,
+  "duration_seconds": 46.04979586601257
+}
