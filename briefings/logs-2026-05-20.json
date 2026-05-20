@@ -1,0 +1,45 @@
+{
+  "date": "2026-05-20",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "tinyhumansai/openhuman",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'tinyhumansai', 'repo': 'openhuman'})"
+    },
+    {
+      "item_title": "Imbad0202/academic-research-skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'Imbad0202', 'repo': 'academic-research-skills'})"
+    },
+    {
+      "item_title": "multica-ai/andrej-karpathy-skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'multica-ai', 'repo': 'andrej-karpathy-skills'})"
+    },
+    {
+      "item_title": "Gemini 3.5 Flash: more expensive, but Google plan to use it for everything",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/May/19/gemini-35-flash/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 11714,
+  "duration_seconds": 43.69166946411133
+}
