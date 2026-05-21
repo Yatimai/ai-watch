@@ -1,0 +1,61 @@
+{
+  "date": "2026-05-21",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "tinyhumansai/openhuman",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'tinyhumansai', 'repo': 'openhuman'})"
+    },
+    {
+      "item_title": "multica-ai/andrej-karpathy-skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'multica-ai', 'repo': 'andrej-karpathy-skills'})"
+    },
+    {
+      "item_title": "colbymchenry/codegraph",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'colbymchenry', 'repo': 'codegraph'})"
+    },
+    {
+      "item_title": "Quoting SpaceX S-1",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/May/20/spacex-s1/#atom-everything'})"
+    },
+    {
+      "item_title": "How fast is 10 tokens per second really?",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/May/20/tokens-per-second/#atom-everything'})"
+    },
+    {
+      "item_title": "Google I/O, Gemini Spark, Antigravity",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/May/20/google-io/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12565,
+  "duration_seconds": 46.15366291999817
+}
