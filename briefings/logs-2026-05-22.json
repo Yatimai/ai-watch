@@ -1,0 +1,69 @@
+{
+  "date": "2026-05-22",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "{'query': 'Qwen2.5-VL'}",
+      "source": "huggingface",
+      "tools_called": [
+        "search_hf_models"
+      ],
+      "reason": "search_hf_models({'query': 'Qwen2.5-VL'})"
+    },
+    {
+      "item_title": "{'query': 'Mimo-VL'}",
+      "source": "huggingface",
+      "tools_called": [
+        "search_hf_models"
+      ],
+      "reason": "search_hf_models({'query': 'Mimo-VL'})"
+    },
+    {
+      "item_title": "colbymchenry/codegraph",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'colbymchenry', 'repo': 'codegraph'})"
+    },
+    {
+      "item_title": "multica-ai/andrej-karpathy-skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'multica-ai', 'repo': 'andrej-karpathy-skills'})"
+    },
+    {
+      "item_title": "Imbad0202/academic-research-skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'Imbad0202', 'repo': 'academic-research-skills'})"
+    },
+    {
+      "item_title": "FTC to Require Cox Media Group, Two Other Firms to Pay Nearly $1 Million to Settle Charges They Deceived Customers About “Active Listening” AI-Powered Marketing Service",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/May/22/ftc-active-listening/#atom-everything'})"
+    },
+    {
+      "item_title": "Datasette Agent",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/May/21/datasette-agent/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 13026,
+  "duration_seconds": 52.86762976646423
+}
