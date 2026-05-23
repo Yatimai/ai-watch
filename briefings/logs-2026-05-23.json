@@ -1,0 +1,53 @@
+{
+  "date": "2026-05-23",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "colbymchenry/codegraph",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'colbymchenry', 'repo': 'codegraph'})"
+    },
+    {
+      "item_title": "anthropics/claude-plugins-official",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'anthropics', 'repo': 'claude-plugins-official'})"
+    },
+    {
+      "item_title": "Lum1104/Understand-Anything",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'Lum1104', 'repo': 'Understand-Anything'})"
+    },
+    {
+      "item_title": "The memory shortage is causing a repricing of consumer electronics",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/May/22/memory-shortage/#atom-everything'})"
+    },
+    {
+      "item_title": "Datasette Agent",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/May/21/datasette-agent/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12478,
+  "duration_seconds": 46.46493625640869
+}
