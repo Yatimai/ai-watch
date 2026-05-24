@@ -1,0 +1,61 @@
+{
+  "date": "2026-05-24",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "multica-ai/andrej-karpathy-skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'multica-ai', 'repo': 'andrej-karpathy-skills'})"
+    },
+    {
+      "item_title": "colbymchenry/codegraph",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'colbymchenry', 'repo': 'codegraph'})"
+    },
+    {
+      "item_title": "Lum1104/Understand-Anything",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'Lum1104', 'repo': 'Understand-Anything'})"
+    },
+    {
+      "item_title": "On the <dl>",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/May/23/on-the-dl/#atom-everything'})"
+    },
+    {
+      "item_title": "The memory shortage is causing a repricing of consumer electronics",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/May/22/memory-shortage/#atom-everything'})"
+    },
+    {
+      "item_title": "FTC to Require Cox Media Group, Two Other Firms to Pay Nearly $1 Million to Settle Charges They Deceived Customers About “Active Listening” AI-Powered Marketing Service",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/May/22/ftc-active-listening/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 3,
+  "total_tokens": 19143,
+  "duration_seconds": 44.99268436431885
+}
