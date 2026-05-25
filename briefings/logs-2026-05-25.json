@@ -1,0 +1,45 @@
+{
+  "date": "2026-05-25",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "Lum1104/Understand-Anything",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'Lum1104', 'repo': 'Understand-Anything'})"
+    },
+    {
+      "item_title": "colbymchenry/codegraph",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'colbymchenry', 'repo': 'codegraph'})"
+    },
+    {
+      "item_title": "multica-ai/andrej-karpathy-skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'multica-ai', 'repo': 'andrej-karpathy-skills'})"
+    },
+    {
+      "item_title": "datasette 1.0a30",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/May/24/datasette/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 11128,
+  "duration_seconds": 49.46011710166931
+}
