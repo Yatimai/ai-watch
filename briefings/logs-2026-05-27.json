@@ -1,0 +1,53 @@
+{
+  "date": "2026-05-27",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "Lum1104/Understand-Anything",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'Lum1104', 'repo': 'Understand-Anything'})"
+    },
+    {
+      "item_title": "affaan-m/ECC",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'affaan-m', 'repo': 'ECC'})"
+    },
+    {
+      "item_title": "Quoting Kyle Ferrana",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/May/27/kyle-ferrana/#atom-everything'})"
+    },
+    {
+      "item_title": "The pressure",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/May/26/the-pressure/#atom-everything'})"
+    },
+    {
+      "item_title": "Microsoft Copilot Cowork Exfiltrates Files",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/May/26/copilot-cowork-exfiltrates-files/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12433,
+  "duration_seconds": 48.16228532791138
+}
