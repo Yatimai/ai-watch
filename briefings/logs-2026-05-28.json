@@ -1,0 +1,45 @@
+{
+  "date": "2026-05-28",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "Lum1104/Understand-Anything",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'Lum1104', 'repo': 'Understand-Anything'})"
+    },
+    {
+      "item_title": "Leonxlnx/taste-skill",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'Leonxlnx', 'repo': 'taste-skill'})"
+    },
+    {
+      "item_title": "sqlite AGENTS.md",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/May/27/sqlite-agents/#atom-everything'})"
+    },
+    {
+      "item_title": "I think Anthropic and OpenAI have found product-market fit",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/May/27/product-market-fit/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 11960,
+  "duration_seconds": 48.21092176437378
+}
