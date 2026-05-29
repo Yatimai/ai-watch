@@ -1,0 +1,53 @@
+{
+  "date": "2026-05-29",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "AgentDoG 1.5: A Lightweight and Scalable Alignment Framework for AI Agent Safety and Security",
+      "source": "huggingface",
+      "tools_called": [
+        "search_hf_models"
+      ],
+      "reason": "search_hf_models({'query': 'AgentDoG'})"
+    },
+    {
+      "item_title": "harry0703/MoneyPrinterTurbo",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'harry0703', 'repo': 'MoneyPrinterTurbo'})"
+    },
+    {
+      "item_title": "Leonxlnx/taste-skill",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'Leonxlnx', 'repo': 'taste-skill'})"
+    },
+    {
+      "item_title": "datasette 1.0a31",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/May/29/datasette/#atom-everything'})"
+    },
+    {
+      "item_title": "Anthropic's run-rate revenue hits $47 billion",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/May/29/anthropic/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12145,
+  "duration_seconds": 50.27852177619934
+}
