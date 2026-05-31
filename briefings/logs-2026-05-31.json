@@ -1,0 +1,69 @@
+{
+  "date": "2026-05-31",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "AgentDoG 1.5: A Lightweight and Scalable Alignment Framework for AI Agent Safety and Security",
+      "source": "huggingface",
+      "tools_called": [
+        "search_hf_models"
+      ],
+      "reason": "search_hf_models({'query': 'AgentDoG'})"
+    },
+    {
+      "item_title": "harry0703/MoneyPrinterTurbo",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'harry0703', 'repo': 'MoneyPrinterTurbo'})"
+    },
+    {
+      "item_title": "run-llama/liteparse",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'run-llama', 'repo': 'liteparse'})"
+    },
+    {
+      "item_title": "affaan-m/ECC",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'affaan-m', 'repo': 'ECC'})"
+    },
+    {
+      "item_title": "Quoting Karen Kwok for Reuters Breakingviews",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/May/31/anthropic-run-rate/#atom-everything'})"
+    },
+    {
+      "item_title": "How we contain Claude across products",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/May/30/how-we-contain-claude/#atom-everything'})"
+    },
+    {
+      "item_title": "Running Python ASGI apps in the browser via Pyodide + a service worker",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/May/30/pyodide-asgi-browser/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 10862,
+  "duration_seconds": 47.80355620384216
+}
