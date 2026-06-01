@@ -1,0 +1,45 @@
+{
+  "date": "2026-06-01",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "harry0703/MoneyPrinterTurbo",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'harry0703', 'repo': 'MoneyPrinterTurbo'})"
+    },
+    {
+      "item_title": "OpenBMB/VoxCPM",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'OpenBMB', 'repo': 'VoxCPM'})"
+    },
+    {
+      "item_title": "FareedKhan-dev/train-llm-from-scratch",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'FareedKhan-dev', 'repo': 'train-llm-from-scratch'})"
+    },
+    {
+      "item_title": "The solution might be cancelling my AI subscription",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/May/31/the-solution-might-be-cancelling-my-ai-subscription/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12244,
+  "duration_seconds": 46.071646213531494
+}
