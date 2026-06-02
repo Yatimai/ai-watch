@@ -1,0 +1,53 @@
+{
+  "date": "2026-06-02",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "harry0703/MoneyPrinterTurbo",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'harry0703', 'repo': 'MoneyPrinterTurbo'})"
+    },
+    {
+      "item_title": "nesquena/hermes-webui",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'nesquena', 'repo': 'hermes-webui'})"
+    },
+    {
+      "item_title": "OpenBMB/VoxCPM",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'OpenBMB', 'repo': 'VoxCPM'})"
+    },
+    {
+      "item_title": "Pasted File Editor",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jun/2/pasted-file-editor/#atom-everything'})"
+    },
+    {
+      "item_title": "Hackers Simply Asked Meta AI to Give Them Access to High-Profile Instagram Accounts. It Worked",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jun/1/hackers-simply-asked-meta-ai/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12402,
+  "duration_seconds": 49.431501626968384
+}
