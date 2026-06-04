@@ -1,0 +1,45 @@
+{
+  "date": "2026-06-04",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "{'query': 'Cosmos 3 nvidia'}",
+      "source": "huggingface",
+      "tools_called": [
+        "search_hf_models"
+      ],
+      "reason": "search_hf_models({'query': 'Cosmos 3 nvidia'})"
+    },
+    {
+      "item_title": "chopratejas/headroom",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'chopratejas', 'repo': 'headroom'})"
+    },
+    {
+      "item_title": "affaan-m/ECC",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'affaan-m', 'repo': 'ECC'})"
+    },
+    {
+      "item_title": "Uber Caps Usage of AI Tools Like Claude Code to Manage Costs",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jun/3/uber-caps-usage/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 11186,
+  "duration_seconds": 44.29978346824646
+}
