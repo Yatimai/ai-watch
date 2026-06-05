@@ -1,0 +1,45 @@
+{
+  "date": "2026-06-05",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "NousResearch/hermes-agent",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'NousResearch', 'repo': 'hermes-agent'})"
+    },
+    {
+      "item_title": "affaan-m/ECC",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'affaan-m', 'repo': 'ECC'})"
+    },
+    {
+      "item_title": "AI enthusiasts are in a race against time, AI skeptics are in a race against entropy",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jun/4/ai-enthusiasts-ai-skeptics/#atom-everything'})"
+    },
+    {
+      "item_title": "Uber Caps Usage of AI Tools Like Claude Code to Manage Costs",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jun/3/uber-caps-usage/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 11078,
+  "duration_seconds": 48.460747480392456
+}
