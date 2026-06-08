@@ -1,0 +1,53 @@
+{
+  "date": "2026-06-08",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "RyanCodrai/turbovec",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'RyanCodrai', 'repo': 'turbovec'})"
+    },
+    {
+      "item_title": "mvanhorn/last30days-skill",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'mvanhorn', 'repo': 'last30days-skill'})"
+    },
+    {
+      "item_title": "Panniantong/Agent-Reach",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'Panniantong', 'repo': 'Agent-Reach'})"
+    },
+    {
+      "item_title": "datasette-agent-edit 0.1a0",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jun/7/datasette-agent-edit/#atom-everything'})"
+    },
+    {
+      "item_title": "Running Python code in a sandbox with MicroPython and WASM",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jun/6/micropython-in-a-sandbox/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 13352,
+  "duration_seconds": 52.17657232284546
+}
