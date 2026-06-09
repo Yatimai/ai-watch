@@ -1,0 +1,45 @@
+{
+  "date": "2026-06-09",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "mvanhorn/last30days-skill",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'mvanhorn', 'repo': 'last30days-skill'})"
+    },
+    {
+      "item_title": "RyanCodrai/turbovec",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'RyanCodrai', 'repo': 'turbovec'})"
+    },
+    {
+      "item_title": "Siri AI at WWDC 2026",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jun/8/wwdc/#atom-everything'})"
+    },
+    {
+      "item_title": "datasette-agent-edit 0.1a0",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jun/7/datasette-agent-edit/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 11219,
+  "duration_seconds": 41.48425507545471
+}
