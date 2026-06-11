@@ -1,0 +1,53 @@
+{
+  "date": "2026-06-11",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "msitarzewski/agency-agents",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'msitarzewski', 'repo': 'agency-agents'})"
+    },
+    {
+      "item_title": "obra/superpowers",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'obra', 'repo': 'superpowers'})"
+    },
+    {
+      "item_title": "addyosmani/agent-skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'addyosmani', 'repo': 'agent-skills'})"
+    },
+    {
+      "item_title": "Anthropic Walks Back Policy That Could Have ‘Sabotaged’ AI Researchers Using Claude",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jun/11/anthropic-walks-back-policy/#atom-everything'})"
+    },
+    {
+      "item_title": "DiffusionGemma",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jun/10/diffusiongemma/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 11984,
+  "duration_seconds": 52.98886322975159
+}
