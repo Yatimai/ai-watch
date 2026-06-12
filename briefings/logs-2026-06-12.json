@@ -1,0 +1,53 @@
+{
+  "date": "2026-06-12",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "addyosmani/agent-skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'addyosmani', 'repo': 'agent-skills'})"
+    },
+    {
+      "item_title": "phuryn/pm-skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'phuryn', 'repo': 'pm-skills'})"
+    },
+    {
+      "item_title": "msitarzewski/agency-agents",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'msitarzewski', 'repo': 'agency-agents'})"
+    },
+    {
+      "item_title": "Claude Fable is relentlessly proactive",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/#atom-everything'})"
+    },
+    {
+      "item_title": "datasette 1.0a33",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jun/11/datasette/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12339,
+  "duration_seconds": 51.242032289505005
+}
