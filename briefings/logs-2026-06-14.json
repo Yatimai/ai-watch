@@ -1,0 +1,53 @@
+{
+  "date": "2026-06-14",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "{'query': 'MiniMax-M3'}",
+      "source": "huggingface",
+      "tools_called": [
+        "search_hf_models"
+      ],
+      "reason": "search_hf_models({'query': 'MiniMax-M3'})"
+    },
+    {
+      "item_title": "addyosmani/agent-skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'addyosmani', 'repo': 'agent-skills'})"
+    },
+    {
+      "item_title": "obra/superpowers",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'obra', 'repo': 'superpowers'})"
+    },
+    {
+      "item_title": "NVIDIA/SkillSpector",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'NVIDIA', 'repo': 'SkillSpector'})"
+    },
+    {
+      "item_title": "Publishing WASM wheels to PyPI for use with Pyodide",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jun/13/publishing-wasm-wheels/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 11756,
+  "duration_seconds": 57.15302801132202
+}
