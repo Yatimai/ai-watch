@@ -1,0 +1,37 @@
+{
+  "date": "2026-06-15",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "rohitg00/ai-engineering-from-scratch",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'rohitg00', 'repo': 'ai-engineering-from-scratch'})"
+    },
+    {
+      "item_title": "Why AI hasn’t replaced software engineers, and won’t",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jun/14/why-ai-hasnt-replaced-software-engineers/#atom-everything'})"
+    },
+    {
+      "item_title": "Publishing WASM wheels to PyPI for use with Pyodide",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jun/13/publishing-wasm-wheels/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 10610,
+  "duration_seconds": 39.6878764629364
+}
