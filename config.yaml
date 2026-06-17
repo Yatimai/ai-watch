@@ -2,7 +2,7 @@
 # Les clés API sont en variables d'environnement, pas ici.
 
 # LLM
-llm_model: "claude-sonnet-4-20250514"
+llm_model: "claude-sonnet-4-6"
 
 # Sources
 sources:

@@ -10,6 +10,7 @@ import logging
 from pathlib import Path
 from typing import Any
 
+from anthropic import NotFoundError
 from langchain_anthropic import ChatAnthropic
 from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_core.runnables import Runnable
@@ -41,6 +42,14 @@ async def _llm_invoke_with_retry(llm: Runnable[Any, Any], messages: list, max_re
     for attempt in range(max_retries + 1):
         try:
             return await llm.ainvoke(messages)
+        except NotFoundError as exc:
+            # Modèle inexistant/retiré côté API : retenter est inutile, échouer clair.
+            model = load_config()["llm_model"]
+            raise RuntimeError(
+                f"Modèle Anthropic introuvable: '{model}'. "
+                f"Il a probablement été retiré de l'API — mets à jour 'llm_model' "
+                f"dans config.yaml avec un modèle actuel (ex. claude-sonnet-4-6)."
+            ) from exc
         except Exception:
             if attempt == max_retries:
                 raise

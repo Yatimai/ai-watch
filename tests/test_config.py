@@ -7,7 +7,7 @@ import pytest
 from src.config import load_config
 
 SAMPLE_YAML = """\
-llm_model: "claude-sonnet-4-20250514"
+llm_model: "claude-sonnet-4-6"
 sources:
   huggingface:
     enabled: true
@@ -69,20 +69,20 @@ class TestLoadConfig:
     def test_llm_model_env_override(self):
         env = {
             "ANTHROPIC_API_KEY": "sk-key",
-            "LLM_MODEL": "claude-opus-4-20250514",
+            "LLM_MODEL": "claude-opus-4-8",
         }
         p_open, p_env = _patch_yaml(env)
         with p_open, p_env:
             config = load_config()
 
-        assert config["llm_model"] == "claude-opus-4-20250514"
+        assert config["llm_model"] == "claude-opus-4-8"
 
     def test_llm_model_default_from_yaml(self):
         p_open, p_env = _patch_yaml({"ANTHROPIC_API_KEY": "sk-key"})
         with p_open, p_env:
             config = load_config()
 
-        assert config["llm_model"] == "claude-sonnet-4-20250514"
+        assert config["llm_model"] == "claude-sonnet-4-6"
 
     def test_yaml_values_loaded(self):
         p_open, p_env = _patch_yaml({"ANTHROPIC_API_KEY": "sk-key"})
