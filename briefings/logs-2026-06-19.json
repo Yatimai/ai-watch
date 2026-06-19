@@ -1,0 +1,53 @@
+{
+  "date": "2026-06-19",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "DeusData/codebase-memory-mcp",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'DeusData', 'repo': 'codebase-memory-mcp'})"
+    },
+    {
+      "item_title": "obra/superpowers",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'obra', 'repo': 'superpowers'})"
+    },
+    {
+      "item_title": "Kilo-Org/kilocode",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'Kilo-Org', 'repo': 'kilocode'})"
+    },
+    {
+      "item_title": "Datasette Apps: Host custom HTML applications inside Datasette",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jun/18/datasette-apps/#atom-everything'})"
+    },
+    {
+      "item_title": "GLM-5.2 is probably the most powerful text-only open weights LLM",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jun/17/glm-52/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 13734,
+  "duration_seconds": 52.11684966087341
+}
