@@ -1,0 +1,45 @@
+{
+  "date": "2026-06-20",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "chopratejas/headroom",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'chopratejas', 'repo': 'headroom'})"
+    },
+    {
+      "item_title": "obra/superpowers",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'obra', 'repo': 'superpowers'})"
+    },
+    {
+      "item_title": "Quoting Sean Lynch",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jun/19/sean-lynch/#atom-everything'})"
+    },
+    {
+      "item_title": "Datasette Apps: Host custom HTML applications inside Datasette",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jun/18/datasette-apps/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12135,
+  "duration_seconds": 48.00327014923096
+}
