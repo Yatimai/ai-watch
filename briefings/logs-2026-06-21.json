@@ -1,0 +1,53 @@
+{
+  "date": "2026-06-21",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "chopratejas/headroom",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'chopratejas', 'repo': 'headroom'})"
+    },
+    {
+      "item_title": "mattpocock/skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'mattpocock', 'repo': 'skills'})"
+    },
+    {
+      "item_title": "DeusData/codebase-memory-mcp",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'DeusData', 'repo': 'codebase-memory-mcp'})"
+    },
+    {
+      "item_title": "Quoting Sean Lynch",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jun/19/sean-lynch/#atom-everything'})"
+    },
+    {
+      "item_title": "Datasette Apps: Host custom HTML applications inside Datasette",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jun/18/datasette-apps/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 13356,
+  "duration_seconds": 60.92196464538574
+}
