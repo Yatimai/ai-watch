@@ -1,0 +1,53 @@
+{
+  "date": "2026-06-22",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "calesthio/OpenMontage",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'calesthio', 'repo': 'OpenMontage'})"
+    },
+    {
+      "item_title": "palmier-io/palmier-pro",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'palmier-io', 'repo': 'palmier-pro'})"
+    },
+    {
+      "item_title": "mattpocock/skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'mattpocock', 'repo': 'skills'})"
+    },
+    {
+      "item_title": "sqlite-utils 4.0rc1 adds migrations and nested transactions",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jun/21/sqlite-utils-40rc1/#atom-everything'})"
+    },
+    {
+      "item_title": "Temporary Cloudflare Accounts for AI agents",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jun/21/temporary-cloudflare-accounts/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 13085,
+  "duration_seconds": 47.342283487319946
+}
