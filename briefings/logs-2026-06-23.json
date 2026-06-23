@@ -1,0 +1,61 @@
+{
+  "date": "2026-06-23",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "calesthio/OpenMontage",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'calesthio', 'repo': 'OpenMontage'})"
+    },
+    {
+      "item_title": "palmier-io/palmier-pro",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'palmier-io', 'repo': 'palmier-pro'})"
+    },
+    {
+      "item_title": "mattpocock/skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'mattpocock', 'repo': 'skills'})"
+    },
+    {
+      "item_title": "Prompt Injection as Role Confusion",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jun/22/prompt-injection-as-role-confusion/#atom-everything'})"
+    },
+    {
+      "item_title": "Porting the Moebius 0.2B image inpainting model to run in the browser with Claude Code",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jun/22/porting-moebius/#atom-everything'})"
+    },
+    {
+      "item_title": "sqlite-utils 4.0rc1 adds migrations and nested transactions",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jun/21/sqlite-utils-40rc1/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 14471,
+  "duration_seconds": 54.410887002944946
+}
