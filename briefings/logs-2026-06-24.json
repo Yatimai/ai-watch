@@ -1,0 +1,45 @@
+{
+  "date": "2026-06-24",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "calesthio/OpenMontage",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'calesthio', 'repo': 'OpenMontage'})"
+    },
+    {
+      "item_title": "palmier-io/palmier-pro",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'palmier-io', 'repo': 'palmier-pro'})"
+    },
+    {
+      "item_title": "datasette 1.0a35",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jun/23/datasette/#atom-everything'})"
+    },
+    {
+      "item_title": "Prompt Injection as Role Confusion",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jun/22/prompt-injection-as-role-confusion/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12434,
+  "duration_seconds": 51.43485927581787
+}
