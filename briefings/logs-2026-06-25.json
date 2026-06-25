@@ -1,0 +1,53 @@
+{
+  "date": "2026-06-25",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "calesthio/OpenMontage",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'calesthio', 'repo': 'OpenMontage'})"
+    },
+    {
+      "item_title": "NousResearch/hermes-agent",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'NousResearch', 'repo': 'hermes-agent'})"
+    },
+    {
+      "item_title": "simonw/browser-compat-db",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jun/24/browser-compat-db/#atom-everything'})"
+    },
+    {
+      "item_title": "Quoting Tom MacWright",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jun/24/tom-macwright/#atom-everything'})"
+    },
+    {
+      "item_title": "datasette 1.0a35",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jun/23/datasette/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 13050,
+  "duration_seconds": 52.18255066871643
+}
