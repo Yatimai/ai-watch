@@ -1,0 +1,53 @@
+{
+  "date": "2026-06-26",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "calesthio/OpenMontage",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'calesthio', 'repo': 'OpenMontage'})"
+    },
+    {
+      "item_title": "google-labs-code/design.md",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'google-labs-code', 'repo': 'design.md'})"
+    },
+    {
+      "item_title": "JCodesMore/ai-website-cloner-template",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'JCodesMore', 'repo': 'ai-website-cloner-template'})"
+    },
+    {
+      "item_title": "AI and Liability",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jun/25/ai-and-liability/#atom-everything'})"
+    },
+    {
+      "item_title": "simonw/browser-compat-db",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jun/24/browser-compat-db/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12800,
+  "duration_seconds": 58.362101316452026
+}
