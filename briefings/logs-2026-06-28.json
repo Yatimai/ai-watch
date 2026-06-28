@@ -1,0 +1,53 @@
+{
+  "date": "2026-06-28",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "Quoting Dean W. Ball",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jun/26/dean-w-ball/#atom-everything'})"
+    },
+    {
+      "item_title": "Quoting Timothy B. Lee",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jun/26/timothy-b-lee/#atom-everything'})"
+    },
+    {
+      "item_title": "What happened after 2,000 people tried to hack my AI assistant",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jun/26/hack-my-ai-assistant/#atom-everything'})"
+    },
+    {
+      "item_title": "google-labs-code/design.md",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'google-labs-code', 'repo': 'design.md'})"
+    },
+    {
+      "item_title": "JCodesMore/ai-website-cloner-template",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'JCodesMore', 'repo': 'ai-website-cloner-template'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12265,
+  "duration_seconds": 52.722856521606445
+}
