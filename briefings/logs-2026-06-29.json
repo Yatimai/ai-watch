@@ -1,0 +1,53 @@
+{
+  "date": "2026-06-29",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "xbtlin/ai-berkshire",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'xbtlin', 'repo': 'ai-berkshire'})"
+    },
+    {
+      "item_title": "msitarzewski/agency-agents",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'msitarzewski', 'repo': 'agency-agents'})"
+    },
+    {
+      "item_title": "HKUDS/Vibe-Trading",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'HKUDS', 'repo': 'Vibe-Trading'})"
+    },
+    {
+      "item_title": "Quoting Jon Udell",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jun/28/jon-udell/#atom-everything'})"
+    },
+    {
+      "item_title": "Quoting Dean W. Ball",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jun/26/dean-w-ball/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 13525,
+  "duration_seconds": 55.22453808784485
+}
