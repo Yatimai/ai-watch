@@ -1,0 +1,53 @@
+{
+  "date": "2026-06-30",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "msitarzewski/agency-agents",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'msitarzewski', 'repo': 'agency-agents'})"
+    },
+    {
+      "item_title": "xbtlin/ai-berkshire",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'xbtlin', 'repo': 'ai-berkshire'})"
+    },
+    {
+      "item_title": "browser-use/video-use",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'browser-use', 'repo': 'video-use'})"
+    },
+    {
+      "item_title": "HTML table extractor",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jun/29/html-table-extractor/#atom-everything'})"
+    },
+    {
+      "item_title": "Ornith-1.0: Self-Scaffolding LLMs for Agentic Coding",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jun/29/ornith/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 14145,
+  "duration_seconds": 59.004270792007446
+}
