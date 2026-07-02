@@ -1,0 +1,53 @@
+{
+  "date": "2026-07-02",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "msitarzewski/agency-agents",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'msitarzewski', 'repo': 'agency-agents'})"
+    },
+    {
+      "item_title": "usestrix/strix",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'usestrix', 'repo': 'strix'})"
+    },
+    {
+      "item_title": "Quoting Anthropic",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jun/30/anthropic/#atom-everything'})"
+    },
+    {
+      "item_title": "Nano Banana 2 Lite",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jun/30/nano-banana-2-lite/#atom-everything'})"
+    },
+    {
+      "item_title": "What's new in Claude Sonnet 5",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jun/30/claude-sonnet-5/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 13118,
+  "duration_seconds": 53.94374489784241
+}
