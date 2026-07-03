@@ -1,0 +1,61 @@
+{
+  "date": "2026-07-03",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "msitarzewski/agency-agents",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'msitarzewski', 'repo': 'agency-agents'})"
+    },
+    {
+      "item_title": "usestrix/strix",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'usestrix', 'repo': 'strix'})"
+    },
+    {
+      "item_title": "HKUDS/Vibe-Trading",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'HKUDS', 'repo': 'Vibe-Trading'})"
+    },
+    {
+      "item_title": "llm-coding-agent 0.1a0",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/2/llm-coding-agent/#atom-everything'})"
+    },
+    {
+      "item_title": "Using DSPy to evaluate and improve Datasette Agent's SQL system prompts",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/2/dspy-datasette-agent-prompts/#atom-everything'})"
+    },
+    {
+      "item_title": "Understand to participate",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/2/understand-to-participate/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 13911,
+  "duration_seconds": 64.69667983055115
+}
