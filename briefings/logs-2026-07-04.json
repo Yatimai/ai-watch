@@ -1,0 +1,61 @@
+{
+  "date": "2026-07-04",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "JuliusBrussee/caveman",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'JuliusBrussee', 'repo': 'caveman'})"
+    },
+    {
+      "item_title": "usestrix/strix",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'usestrix', 'repo': 'strix'})"
+    },
+    {
+      "item_title": "obra/superpowers",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'obra', 'repo': 'superpowers'})"
+    },
+    {
+      "item_title": "Open Source AI Gap Map",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/3/open-source-ai-gap-map/#atom-everything'})"
+    },
+    {
+      "item_title": "Quoting Josh W. Comeau",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/3/josh-w-comeau/#atom-everything'})"
+    },
+    {
+      "item_title": "Fable's judgement",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/3/judgement/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 13811,
+  "duration_seconds": 56.94083619117737
+}
