@@ -1,0 +1,53 @@
+{
+  "date": "2026-07-05",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "usestrix/strix",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'usestrix', 'repo': 'strix'})"
+    },
+    {
+      "item_title": "JuliusBrussee/caveman",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'JuliusBrussee', 'repo': 'caveman'})"
+    },
+    {
+      "item_title": "mattpocock/skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'mattpocock', 'repo': 'skills'})"
+    },
+    {
+      "item_title": "sqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25)",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/#atom-everything'})"
+    },
+    {
+      "item_title": "Building a World Map with only 500 bytes",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/4/building-a-world-map-with-only-500-bytes/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 13100,
+  "duration_seconds": 50.915151834487915
+}
