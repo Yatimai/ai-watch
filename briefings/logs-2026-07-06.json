@@ -1,0 +1,45 @@
+{
+  "date": "2026-07-06",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "openai/codex-plugin-cc",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'openai', 'repo': 'codex-plugin-cc'})"
+    },
+    {
+      "item_title": "addyosmani/agent-skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'addyosmani', 'repo': 'agent-skills'})"
+    },
+    {
+      "item_title": "sqlite-utils 4.0rc3",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/6/sqlite-utils/#atom-everything'})"
+    },
+    {
+      "item_title": "sqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25)",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12316,
+  "duration_seconds": 51.07486534118652
+}
