@@ -1,0 +1,53 @@
+{
+  "date": "2026-07-07",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "Leonxlnx/taste-skill",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'Leonxlnx', 'repo': 'taste-skill'})"
+    },
+    {
+      "item_title": "{'query': 'tencent Hy3 MoE'}",
+      "source": "huggingface",
+      "tools_called": [
+        "search_hf_models"
+      ],
+      "reason": "search_hf_models({'query': 'tencent Hy3 MoE'})"
+    },
+    {
+      "item_title": "sqlite-utils 4.0rc3",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/6/sqlite-utils/#atom-everything'})"
+    },
+    {
+      "item_title": "sqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25)",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/#atom-everything'})"
+    },
+    {
+      "item_title": "tencent/Hy3",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/6/hy3/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 3,
+  "total_tokens": 19615,
+  "duration_seconds": 55.688589334487915
+}
