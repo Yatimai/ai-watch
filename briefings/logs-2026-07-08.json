@@ -1,0 +1,45 @@
+{
+  "date": "2026-07-08",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "sqlite-utils 4.0, now with database schema migrations",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/7/sqlite-utils-4/#atom-everything'})"
+    },
+    {
+      "item_title": "github-code Web Component",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/7/github-code-component/#atom-everything'})"
+    },
+    {
+      "item_title": "MadsLorentzen/ai-job-search",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'MadsLorentzen', 'repo': 'ai-job-search'})"
+    },
+    {
+      "item_title": "asgeirtj/system_prompts_leaks",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'asgeirtj', 'repo': 'system_prompts_leaks'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12418,
+  "duration_seconds": 45.843976736068726
+}
