@@ -1,0 +1,53 @@
+{
+  "date": "2026-07-09",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "Rewriting Bun in Rust",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/8/rewriting-bun-in-rust/#atom-everything'})"
+    },
+    {
+      "item_title": "Introducing GPT‑Live",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/8/introducing-gptlive/#atom-everything'})"
+    },
+    {
+      "item_title": "Quoting Kenton Varda",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/8/kenton-varda/#atom-everything'})"
+    },
+    {
+      "item_title": "addyosmani/agent-skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'addyosmani', 'repo': 'agent-skills'})"
+    },
+    {
+      "item_title": "MadsLorentzen/ai-job-search",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'MadsLorentzen', 'repo': 'ai-job-search'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 13440,
+  "duration_seconds": 59.98335361480713
+}
