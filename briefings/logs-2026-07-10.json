@@ -1,0 +1,53 @@
+{
+  "date": "2026-07-10",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "addyosmani/agent-skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'addyosmani', 'repo': 'agent-skills'})"
+    },
+    {
+      "item_title": "VoltAgent/awesome-design-md",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'VoltAgent', 'repo': 'awesome-design-md'})"
+    },
+    {
+      "item_title": "Quoting OpenAI",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/10/openai/#atom-everything'})"
+    },
+    {
+      "item_title": "The new GPT-5.6 family: Luna, Terra, Sol",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/9/gpt-5-6/#atom-everything'})"
+    },
+    {
+      "item_title": "Introducing Muse Spark 1.1",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/9/muse-spark-1-1/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12949,
+  "duration_seconds": 57.376110553741455
+}
