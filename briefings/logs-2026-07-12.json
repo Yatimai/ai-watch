@@ -1,0 +1,53 @@
+{
+  "date": "2026-07-12",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "obra/superpowers",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'obra', 'repo': 'superpowers'})"
+    },
+    {
+      "item_title": "google-labs-code/stitch-skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'google-labs-code', 'repo': 'stitch-skills'})"
+    },
+    {
+      "item_title": "sqlite-utils 4.1",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/11/sqlite-utils/#atom-everything'})"
+    },
+    {
+      "item_title": "Quoting Nilay Patel",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/10/nilay-patel/#atom-everything'})"
+    },
+    {
+      "item_title": "Quoting OpenAI",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/10/openai/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12377,
+  "duration_seconds": 57.87744498252869
+}
