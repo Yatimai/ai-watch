@@ -1,0 +1,45 @@
+{
+  "date": "2026-07-13",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "HKUDS/Vibe-Trading",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'HKUDS', 'repo': 'Vibe-Trading'})"
+    },
+    {
+      "item_title": "Dicklesworthstone/destructive_command_guard",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'Dicklesworthstone', 'repo': 'destructive_command_guard'})"
+    },
+    {
+      "item_title": "Directly Responsible Individuals (DRI)",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/12/directly-responsible-individuals/#atom-everything'})"
+    },
+    {
+      "item_title": "Fable gets another bump",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/12/bump/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 11992,
+  "duration_seconds": 51.99504327774048
+}
