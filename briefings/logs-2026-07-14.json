@@ -1,0 +1,61 @@
+{
+  "date": "2026-07-14",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "Dicklesworthstone/destructive_command_guard",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'Dicklesworthstone', 'repo': 'destructive_command_guard'})"
+    },
+    {
+      "item_title": "HKUDS/Vibe-Trading",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'HKUDS', 'repo': 'Vibe-Trading'})"
+    },
+    {
+      "item_title": "Graphify-Labs/graphify",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'Graphify-Labs', 'repo': 'graphify'})"
+    },
+    {
+      "item_title": "Using uvx in GitHub Actions in a cache-friendly way",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/14/uvx-github-actions-cache/#atom-everything'})"
+    },
+    {
+      "item_title": "DOOMQL",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/13/doomql/#atom-everything'})"
+    },
+    {
+      "item_title": "datasette code-frequency chart on GitHub",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/13/datasette-code-frequency/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 14639,
+  "duration_seconds": 52.979389667510986
+}
