@@ -1,0 +1,61 @@
+{
+  "date": "2026-07-15",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "Graphify-Labs/graphify",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'Graphify-Labs', 'repo': 'graphify'})"
+    },
+    {
+      "item_title": "mattpocock/skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'mattpocock', 'repo': 'skills'})"
+    },
+    {
+      "item_title": "HKUDS/Vibe-Trading",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'HKUDS', 'repo': 'Vibe-Trading'})"
+    },
+    {
+      "item_title": "simonw/pedalican",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/14/pedalican/#atom-everything'})"
+    },
+    {
+      "item_title": "lobste.rs is now running on SQLite",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/14/lobsters-sqlite/#atom-everything'})"
+    },
+    {
+      "item_title": "Quoting GitHub Changelog",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/14/github-changeling/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 14788,
+  "duration_seconds": 57.226282596588135
+}
