@@ -1,0 +1,69 @@
+{
+  "date": "2026-07-16",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "mattpocock/skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'mattpocock', 'repo': 'skills'})"
+    },
+    {
+      "item_title": "Nutlope/hallmark",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'Nutlope', 'repo': 'hallmark'})"
+    },
+    {
+      "item_title": "Mermaid to Unicode box art (grok-mermaid)",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/16/grok-mermaid/#atom-everything'})"
+    },
+    {
+      "item_title": "xai-org/grok-build, now open source",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/15/grok-build/#atom-everything'})"
+    },
+    {
+      "item_title": "How I tricked Claude into leaking your deepest, darkest secrets",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration/#atom-everything'})"
+    },
+    {
+      "item_title": "mattpocock/skills",
+      "source": "github",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://github.com/mattpocock/skills'})"
+    },
+    {
+      "item_title": "Nutlope/hallmark",
+      "source": "github",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://github.com/Nutlope/hallmark'})"
+    }
+  ],
+  "llm_calls": 3,
+  "total_tokens": 21327,
+  "duration_seconds": 79.04887342453003
+}
