@@ -1,0 +1,61 @@
+{
+  "date": "2026-07-17",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "Nutlope/hallmark",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'Nutlope', 'repo': 'hallmark'})"
+    },
+    {
+      "item_title": "mattpocock/skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'mattpocock', 'repo': 'skills'})"
+    },
+    {
+      "item_title": "Graphify-Labs/graphify",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'Graphify-Labs', 'repo': 'graphify'})"
+    },
+    {
+      "item_title": "Spot birds not golf",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/17/spot-birds-not-golf/#atom-everything'})"
+    },
+    {
+      "item_title": "Firefox in WebAssembly",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/16/firefox-in-webassembly/#atom-everything'})"
+    },
+    {
+      "item_title": "Kimi K3, and what we can still learn from the pelican benchmark",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/16/kimi-k3/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 14792,
+  "duration_seconds": 62.75181341171265
+}
