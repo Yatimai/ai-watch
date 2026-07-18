@@ -1,0 +1,45 @@
+{
+  "date": "2026-07-18",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "Nutlope/hallmark",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'Nutlope', 'repo': 'hallmark'})"
+    },
+    {
+      "item_title": "HKUDS/DeepTutor",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'HKUDS', 'repo': 'DeepTutor'})"
+    },
+    {
+      "item_title": "Claude make Fable 5 permanent",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/18/claude-make-fable-5-permanent/#atom-everything'})"
+    },
+    {
+      "item_title": "Quoting Kimi K3",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/17/kimi-k3/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12167,
+  "duration_seconds": 55.117706298828125
+}
