@@ -1,0 +1,53 @@
+{
+  "date": "2026-07-19",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "Robbyant/lingbot-map",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'Robbyant', 'repo': 'lingbot-map'})"
+    },
+    {
+      "item_title": "tirth8205/code-review-graph",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'tirth8205', 'repo': 'code-review-graph'})"
+    },
+    {
+      "item_title": "AI Mania Is Eviscerating Global Decision-Making",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/19/ai-mania/#atom-everything'})"
+    },
+    {
+      "item_title": "Claude Code uses Bun written in Rust now",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/#atom-everything'})"
+    },
+    {
+      "item_title": "SQLite Query Explainer",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/18/sqlite-query-explainer/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 13615,
+  "duration_seconds": 56.85719609260559
+}
