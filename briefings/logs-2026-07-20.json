@@ -1,0 +1,61 @@
+{
+  "date": "2026-07-20",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "tirth8205/code-review-graph",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'tirth8205', 'repo': 'code-review-graph'})"
+    },
+    {
+      "item_title": "jamiepine/voicebox",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'jamiepine', 'repo': 'voicebox'})"
+    },
+    {
+      "item_title": "KnockOutEZ/wigolo",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'KnockOutEZ', 'repo': 'wigolo'})"
+    },
+    {
+      "item_title": "Quoting Sam Altman",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/20/sam-altman/#atom-everything'})"
+    },
+    {
+      "item_title": "AI Mania Is Eviscerating Global Decision-Making",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/19/ai-mania/#atom-everything'})"
+    },
+    {
+      "item_title": "Claude Code uses Bun written in Rust now",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 14671,
+  "duration_seconds": 58.498512983322144
+}
