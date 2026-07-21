@@ -1,0 +1,61 @@
+{
+  "date": "2026-07-21",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "Reverse-engineering is cheap now",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/20/cheap-reverse-engineering/#atom-everything'})"
+    },
+    {
+      "item_title": "Who’s Afraid of Chinese Models?",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/20/afraid-of-chinese-models/#atom-everything'})"
+    },
+    {
+      "item_title": "Quoting Sam Altman",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/20/sam-altman/#atom-everything'})"
+    },
+    {
+      "item_title": "bojieli/ai-agent-book",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'bojieli', 'repo': 'ai-agent-book'})"
+    },
+    {
+      "item_title": "tirth8205/code-review-graph",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'tirth8205', 'repo': 'code-review-graph'})"
+    },
+    {
+      "item_title": "{'query': 'meno-lite-0.1'}",
+      "source": "huggingface",
+      "tools_called": [
+        "search_hf_models"
+      ],
+      "reason": "search_hf_models({'query': 'meno-lite-0.1'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 13932,
+  "duration_seconds": 64.17880749702454
+}
