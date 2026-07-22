@@ -1,0 +1,53 @@
+{
+  "date": "2026-07-22",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "bojieli/ai-agent-book",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'bojieli', 'repo': 'ai-agent-book'})"
+    },
+    {
+      "item_title": "tirth8205/code-review-graph",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'tirth8205', 'repo': 'code-review-graph'})"
+    },
+    {
+      "item_title": "Nativ: Run AI models locally on your Mac",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/21/nativ/#atom-everything'})"
+    },
+    {
+      "item_title": "A Fireside Chat with Cat and Thariq from the Claude Code team",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/21/cat-and-thariq/#atom-everything'})"
+    },
+    {
+      "item_title": "Reverse-engineering is cheap now",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/20/cheap-reverse-engineering/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 13670,
+  "duration_seconds": 53.07685589790344
+}
