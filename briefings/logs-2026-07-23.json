@@ -1,0 +1,61 @@
+{
+  "date": "2026-07-23",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "koala73/worldmonitor",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'koala73', 'repo': 'worldmonitor'})"
+    },
+    {
+      "item_title": "ayghri/i-have-adhd",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'ayghri', 'repo': 'i-have-adhd'})"
+    },
+    {
+      "item_title": "diegosouzapw/OmniRoute",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'diegosouzapw', 'repo': 'OmniRoute'})"
+    },
+    {
+      "item_title": "Quoting Seth Larson",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/23/seth-larson/#atom-everything'})"
+    },
+    {
+      "item_title": "OpenAI’s accidental cyberattack against Hugging Face is science fiction that happened",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/22/openai-cyberattack/#atom-everything'})"
+    },
+    {
+      "item_title": "Quoting Thomas Ptacek",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/22/thomas-ptacek/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 13952,
+  "duration_seconds": 58.0608766078949
+}
