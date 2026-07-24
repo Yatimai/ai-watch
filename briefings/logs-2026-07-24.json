@@ -1,0 +1,61 @@
+{
+  "date": "2026-07-24",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "koala73/worldmonitor",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'koala73', 'repo': 'worldmonitor'})"
+    },
+    {
+      "item_title": "diegosouzapw/OmniRoute",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'diegosouzapw', 'repo': 'OmniRoute'})"
+    },
+    {
+      "item_title": "ComposioHQ/awesome-claude-skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'ComposioHQ', 'repo': 'awesome-claude-skills'})"
+    },
+    {
+      "item_title": "The first known runaway AI agent - or a very bad marketing stunt?",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/23/the-first-known-runaway-ai-agent/#atom-everything'})"
+    },
+    {
+      "item_title": "Quoting Thomas Ptacek",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/22/thomas-ptacek/#atom-everything'})"
+    },
+    {
+      "item_title": "Quoting Seth Larson",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/23/seth-larson/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 3,
+  "total_tokens": 21746,
+  "duration_seconds": 63.078845262527466
+}
