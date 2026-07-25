@@ -1,0 +1,53 @@
+{
+  "date": "2026-07-25",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "mattpocock/skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'mattpocock', 'repo': 'skills'})"
+    },
+    {
+      "item_title": "koala73/worldmonitor",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'koala73', 'repo': 'worldmonitor'})"
+    },
+    {
+      "item_title": "Quoting Boris Cherny",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/25/boris-cherny/#atom-everything'})"
+    },
+    {
+      "item_title": "Introducing Claude Opus 5",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/24/introducing-claude-opus-5/#atom-everything'})"
+    },
+    {
+      "item_title": "The first known runaway AI agent - or a very bad marketing stunt?",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/23/the-first-known-runaway-ai-agent/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 13504,
+  "duration_seconds": 55.171931743621826
+}
