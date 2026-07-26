@@ -1,0 +1,61 @@
+{
+  "date": "2026-07-26",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "mattpocock/skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'mattpocock', 'repo': 'skills'})"
+    },
+    {
+      "item_title": "citrolabs/ego-lite",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'citrolabs', 'repo': 'ego-lite'})"
+    },
+    {
+      "item_title": "ComposioHQ/awesome-claude-skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'ComposioHQ', 'repo': 'awesome-claude-skills'})"
+    },
+    {
+      "item_title": "Ruff v0.16.0",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/25/ruff/#atom-everything'})"
+    },
+    {
+      "item_title": "Quoting Boris Cherny",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/25/boris-cherny/#atom-everything'})"
+    },
+    {
+      "item_title": "Introducing Claude Opus 5",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/24/introducing-claude-opus-5/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 14504,
+  "duration_seconds": 55.54449701309204
+}
