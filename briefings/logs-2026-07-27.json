@@ -1,0 +1,45 @@
+{
+  "date": "2026-07-27",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "citrolabs/ego-lite",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'citrolabs', 'repo': 'ego-lite'})"
+    },
+    {
+      "item_title": "pbakaus/impeccable",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'pbakaus', 'repo': 'impeccable'})"
+    },
+    {
+      "item_title": "An Inside Look at the Relay Market Powering Token Resellers and Fraud",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/26/relay-market/#atom-everything'})"
+    },
+    {
+      "item_title": "Quoting Boris Cherny",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/25/boris-cherny/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12444,
+  "duration_seconds": 55.80628418922424
+}
