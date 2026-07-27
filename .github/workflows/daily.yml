@@ -47,3 +47,20 @@ jobs:
         run: gh workflow run pages.yml
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Runs after the push on purpose: a malformed briefing is still worth
+      # keeping, so we publish it and fail the run loudly instead of losing
+      # the day. Catches wrapper leaks and truncated output.
+      - name: Verify briefing shape
+        run: |
+          f="briefings/briefing-$(date -u +%Y-%m-%d).md"
+          head -n 1 "$f" | grep -q '^# ' || {
+            echo "::error::$f does not start with its title, model wrapper leaked"
+            head -n 5 "$f"
+            exit 1
+          }
+          n=$(grep -c '^### ' "$f" || true)
+          test "$n" -ge 6 || {
+            echo "::error::$f only has $n items, expected at least 6"
+            exit 1
+          }

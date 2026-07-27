@@ -8,9 +8,11 @@ from unittest.mock import AsyncMock, MagicMock, patch
 import pytest
 
 from src.agent.nodes import (
+    _clean_briefing,
     _format_items_for_prompt,
     _llm_invoke_with_retry,
     _match_tool_call_to_item,
+    _strip_code_fence,
     combine_items,
     enrich_and_brief,
     fetch_sources,
@@ -637,6 +639,94 @@ class TestEnrichAndBrief:
 
         assert "# Veille IA" in result["briefing_markdown"]
         assert "Block 2" in result["briefing_markdown"]
+
+    async def test_wrapped_response_is_unwrapped(self, hf_item: Item):
+        """Preamble + code fence around the answer must not reach the file."""
+        mock_response = MagicMock()
+        mock_response.content = (
+            "I now have all the information needed to write the briefing.\n\n"
+            "```markdown\n"
+            "# AI Briefing\n\n### Item\n\nBody.\n"
+            "```"
+        )
+        mock_response.tool_calls = []
+        mock_response.usage_metadata = {"total_tokens": 300}
+
+        mock_llm = MagicMock()
+        mock_llm.bind_tools.return_value = MagicMock()
+        mock_invoke = AsyncMock(return_value=mock_response)
+
+        state: AgentState = {
+            "items_to_enrich": [hf_item],
+            "sources_status": {"huggingface": "ok"},
+        }
+
+        with (
+            patch("src.agent.nodes._get_llm", return_value=mock_llm),
+            patch("src.agent.nodes._llm_invoke_with_retry", mock_invoke),
+        ):
+            result = await enrich_and_brief(state)
+
+        assert result["briefing_markdown"] == "# AI Briefing\n\n### Item\n\nBody."
+
+
+# ---------------------------------------------------------------------------
+# _strip_code_fence / _clean_briefing
+# ---------------------------------------------------------------------------
+
+
+class TestStripCodeFence:
+    """Tests for _strip_code_fence()."""
+
+    def test_plain_text_untouched(self):
+        assert _strip_code_fence('{"a": 1}') == '{"a": 1}'
+
+    def test_labelled_fence_removed(self):
+        assert _strip_code_fence('```json\n{"a": 1}\n```') == '{"a": 1}'
+
+    def test_bare_fence_removed(self):
+        assert _strip_code_fence('```\n{"a": 1}\n```') == '{"a": 1}'
+
+    def test_unclosed_fence_removed(self):
+        assert _strip_code_fence('```json\n{"a": 1}') == '{"a": 1}'
+
+    def test_lone_fence_does_not_crash(self):
+        assert _strip_code_fence("```") == ""
+
+
+class TestCleanBriefing:
+    """Tests for _clean_briefing(), one case per shape seen in production."""
+
+    def test_clean_briefing_untouched(self):
+        text = "# AI Briefing\n\n### Item\n\nBody."
+        assert _clean_briefing(text) == text
+
+    def test_fenced_briefing(self):
+        """Shape of briefing-2026-07-27."""
+        text = "```markdown\n# AI Briefing\n\n### Item\n\nBody.\n```"
+        assert _clean_briefing(text) == "# AI Briefing\n\n### Item\n\nBody."
+
+    def test_preamble_before_title(self):
+        """Shape of briefing-2026-07-21."""
+        text = "I have all the information needed.\n\n# AI Briefing\n\n### Item\n\nBody."
+        assert _clean_briefing(text) == "# AI Briefing\n\n### Item\n\nBody."
+
+    def test_preamble_and_fence(self):
+        """Shape of briefing-2026-07-24, both defects at once."""
+        text = (
+            "I now have all the information needed.\n\n---\n\n"
+            "```markdown\n# AI Briefing\n\n### Item\n\nBody.\n```"
+        )
+        assert _clean_briefing(text) == "# AI Briefing\n\n### Item\n\nBody."
+
+    def test_inner_code_block_preserved(self):
+        text = "# AI Briefing\n\n### Item\n\n```bash\nnpx foo\n```\n\nBody."
+        assert _clean_briefing(text) == text
+
+    def test_untitled_content_is_kept(self):
+        """Shape of briefing-2026-03-25: no title, but never discard content."""
+        text = "A single paragraph with no heading at all."
+        assert _clean_briefing(text) == text
 
 
 # ---------------------------------------------------------------------------

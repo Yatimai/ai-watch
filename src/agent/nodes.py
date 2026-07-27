@@ -7,6 +7,7 @@ Pipeline:
 import asyncio
 import json
 import logging
+import re
 from pathlib import Path
 from typing import Any
 
@@ -26,6 +27,45 @@ from src.sources.simon import fetch_simon_willison
 logger = logging.getLogger(__name__)
 
 PROMPTS_DIR = Path(__file__).parent.parent.parent / "prompts"
+
+_H1_RE = re.compile(r"^#\s+\S")
+
+
+def _strip_code_fence(text: str) -> str:
+    """Unwrap an answer the model enclosed in a code fence.
+
+    Only a fence opening the answer and closing it is removed, so a fenced
+    block sitting inside the content is left alone.
+    """
+    text = text.strip()
+    if not text.startswith("```"):
+        return text
+    parts = text.split("\n", 1)
+    if len(parts) < 2:
+        return ""
+    body = parts[1].rstrip()
+    if body.endswith("```"):
+        body = body[:-3]
+    return body.strip()
+
+
+def _clean_briefing(text: str) -> str:
+    """Drop the wrapper the model sometimes adds around the briefing itself.
+
+    Two failures seen in production: chatter before the title ("I now have all
+    the information needed to write the briefing.") and the whole briefing
+    wrapped in a code fence, which made the site render the page as one code
+    block. Content is never rewritten, only the wrapper is removed.
+    """
+    lines = _strip_code_fence(text).splitlines()
+    start = next((i for i, line in enumerate(lines) if _H1_RE.match(line)), None)
+    if start is not None:
+        lines = lines[start:]
+    while lines and not lines[-1].strip():
+        lines.pop()
+    if lines and lines[-1].strip() == "```":
+        lines.pop()
+    return "\n".join(lines).strip()
 
 
 def _get_llm() -> ChatAnthropic:
@@ -139,12 +179,7 @@ async def filter_github(state: AgentState) -> AgentState:
 
     # Parse response JSON
     try:
-        # Strip markdown code fences if present
-        content = response.content.strip()
-        if content.startswith("```"):
-            content = content.split("\n", 1)[1]
-            content = content.rsplit("```", 1)[0]
-        filter_results = json.loads(content)
+        filter_results = json.loads(_strip_code_fence(str(response.content)))
     except json.JSONDecodeError:
         logger.error("Failed to parse GitHub filter response: %s", response.content[:200])
         # Fallback: skip GitHub source entirely rather than accepting unfiltered repos
@@ -342,6 +377,10 @@ async def enrich_and_brief(state: AgentState) -> AgentState:
         briefing_markdown = "\n".join(
             block.get("text", "") for block in briefing_markdown if block.get("type") == "text"
         )
+
+    briefing_markdown = _clean_briefing(briefing_markdown)
+    if briefing_markdown and not _H1_RE.match(briefing_markdown):
+        logger.warning("Briefing does not start with a title: %r", briefing_markdown[:80])
 
     return {
         **state,
