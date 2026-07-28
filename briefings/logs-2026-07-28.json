@@ -1,0 +1,53 @@
+{
+  "date": "2026-07-28",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "pbakaus/impeccable",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'pbakaus', 'repo': 'impeccable'})"
+    },
+    {
+      "item_title": "moeru-ai/airi",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'moeru-ai', 'repo': 'airi'})"
+    },
+    {
+      "item_title": "An opinionated guide to which AI to use to do stuff",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/27/an-opinionated-guide-to-which-ai-to-use-to-do-stuff/#atom-everything'})"
+    },
+    {
+      "item_title": "An Inside Look at the Relay Market Powering Token Resellers and Fraud",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/26/relay-market/#atom-everything'})"
+    },
+    {
+      "item_title": "{'query': 'moonshotai Kimi K3'}",
+      "source": "huggingface",
+      "tools_called": [
+        "search_hf_models"
+      ],
+      "reason": "search_hf_models({'query': 'moonshotai Kimi K3'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 13548,
+  "duration_seconds": 54.6801381111145
+}
