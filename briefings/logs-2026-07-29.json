@@ -1,0 +1,61 @@
+{
+  "date": "2026-07-29",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "Discovering cryptographic weaknesses with Claude",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/28/discovering-cryptographic-weaknesses-with-claude/#atom-everything'})"
+    },
+    {
+      "item_title": "Quoting Akshat Bubna",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/28/akshat-bubna/#atom-everything'})"
+    },
+    {
+      "item_title": "uv 0.12.0",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/28/uv/#atom-everything'})"
+    },
+    {
+      "item_title": "bradautomates/claude-video",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'bradautomates', 'repo': 'claude-video'})"
+    },
+    {
+      "item_title": "affaan-m/ECC",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'affaan-m', 'repo': 'ECC'})"
+    },
+    {
+      "item_title": "moeru-ai/airi",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'moeru-ai', 'repo': 'airi'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 14105,
+  "duration_seconds": 54.1369743347168
+}
