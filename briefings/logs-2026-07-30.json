@@ -1,0 +1,53 @@
+{
+  "date": "2026-07-30",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "virgiliojr94/book-to-skill",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'virgiliojr94', 'repo': 'book-to-skill'})"
+    },
+    {
+      "item_title": "affaan-m/ECC",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'affaan-m', 'repo': 'ECC'})"
+    },
+    {
+      "item_title": "Quoting D. Richard Hipp",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/29/d-richard-hipp/#atom-everything'})"
+    },
+    {
+      "item_title": "AI Worming through Word",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/29/ai-worming-through-word/#atom-everything'})"
+    },
+    {
+      "item_title": "Quoting Matthew Green",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/29/matthew-green/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 13367,
+  "duration_seconds": 57.920249462127686
+}
