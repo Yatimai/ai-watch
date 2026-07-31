@@ -1,0 +1,61 @@
+{
+  "date": "2026-07-31",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "different-ai/openwork",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'different-ai', 'repo': 'openwork'})"
+    },
+    {
+      "item_title": "affaan-m/ECC",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'affaan-m', 'repo': 'ECC'})"
+    },
+    {
+      "item_title": "huggingface/speech-to-speech",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'huggingface', 'repo': 'speech-to-speech'})"
+    },
+    {
+      "item_title": "Advancing the price-performance frontier with GPT‑5.6",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/30/luna-price-drop/#atom-everything'})"
+    },
+    {
+      "item_title": "Investigating three real-world incidents in our cybersecurity evaluations",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/30/three-real-world-incidents/#atom-everything'})"
+    },
+    {
+      "item_title": "llm 0.32rc2",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/30/llm-rc2/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 14439,
+  "duration_seconds": 53.108407497406006
+}
