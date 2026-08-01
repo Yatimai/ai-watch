@@ -1,0 +1,45 @@
+{
+  "date": "2026-08-01",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "different-ai/openwork",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'different-ai', 'repo': 'openwork'})"
+    },
+    {
+      "item_title": "mvanhorn/last30days-skill",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'mvanhorn', 'repo': 'last30days-skill'})"
+    },
+    {
+      "item_title": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/31/deepseek-v4-flash-0731/#atom-everything'})"
+    },
+    {
+      "item_title": "Stateless MCP has recaptured my interest (and inspired mcp-explorer and datasette-mcp)",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Jul/31/stateless-mcp/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12524,
+  "duration_seconds": 48.517592906951904
+}
