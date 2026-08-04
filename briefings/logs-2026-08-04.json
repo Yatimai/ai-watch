@@ -1,0 +1,53 @@
+{
+  "date": "2026-08-04",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "Quoting Steve Yegge",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/4/steve-yegge/#atom-everything'})"
+    },
+    {
+      "item_title": "Don't be a meat proxy",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/3/dont-be-a-meat-proxy/#atom-everything'})"
+    },
+    {
+      "item_title": "Quoting David Crawshaw's prompt",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/3/david-crawshaw/#atom-everything'})"
+    },
+    {
+      "item_title": "zhaoxuya520/reverse-skill",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'zhaoxuya520', 'repo': 'reverse-skill'})"
+    },
+    {
+      "item_title": "TencentCloud/TencentDB-Agent-Memory",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'TencentCloud', 'repo': 'TencentDB-Agent-Memory'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 13050,
+  "duration_seconds": 67.93359231948853
+}
