@@ -1,0 +1,53 @@
+{
+  "date": "2026-08-06",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "An AI model from Meta also hacked another company during testing",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/6/an-ai-model-from-meta/#atom-everything'})"
+    },
+    {
+      "item_title": "Introducing Muse Code and Muse Spark 1.2",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/5/muse-code-and-muse-spark-12/#atom-everything'})"
+    },
+    {
+      "item_title": "Third-party cyber evaluations involving OpenAI models",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/5/third-party-cyber-evaluations/#atom-everything'})"
+    },
+    {
+      "item_title": "obra/superpowers",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'obra', 'repo': 'superpowers'})"
+    },
+    {
+      "item_title": "cloudflare/computer",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'cloudflare', 'repo': 'computer'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 13466,
+  "duration_seconds": 54.32348132133484
+}
