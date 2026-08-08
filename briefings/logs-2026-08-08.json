@@ -1,0 +1,61 @@
+{
+  "date": "2026-08-08",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "PrimeIntellect-ai/prime-agent",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'PrimeIntellect-ai', 'repo': 'prime-agent'})"
+    },
+    {
+      "item_title": "mattpocock/skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'mattpocock', 'repo': 'skills'})"
+    },
+    {
+      "item_title": "addyosmani/agent-skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'addyosmani', 'repo': 'agent-skills'})"
+    },
+    {
+      "item_title": "Quoting John Gruber",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/8/john-gruber/#atom-everything'})"
+    },
+    {
+      "item_title": "Now we have a timeline of the OpenAI accidental attack against Hugging Face",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/7/openai-timeline/#atom-everything'})"
+    },
+    {
+      "item_title": "Moonlight & Mayhem (Raccoon Heist by Codex + GPT-5.6 Sol Ultra)",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/7/moonlight-mayhem/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 14581,
+  "duration_seconds": 57.41424298286438
+}
