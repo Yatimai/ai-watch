@@ -1,0 +1,61 @@
+{
+  "date": "2026-08-10",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "PrimeIntellect-ai/prime-agent",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'PrimeIntellect-ai', 'repo': 'prime-agent'})"
+    },
+    {
+      "item_title": "msitarzewski/agency-agents",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'msitarzewski', 'repo': 'agency-agents'})"
+    },
+    {
+      "item_title": "addyosmani/agent-skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'addyosmani', 'repo': 'agent-skills'})"
+    },
+    {
+      "item_title": "Quoting OpenClaw",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/10/openclaw/#atom-everything'})"
+    },
+    {
+      "item_title": "Quoting Claude Opus 5 system prompt",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/9/claude-opus-5-system-prompt/#atom-everything'})"
+    },
+    {
+      "item_title": "GitHub Models is now retired",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/9/github-models-is-now-retired/#atom-everything'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 14035,
+  "duration_seconds": 56.39838910102844
+}
