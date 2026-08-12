@@ -1,0 +1,53 @@
+{
+  "date": "2026-08-12",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "There are no lossless transformations of natural-language text",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/11/there-are-no-lossless-transformations-of-natural-language-text/#atom-everything'})"
+    },
+    {
+      "item_title": "Stealing Reasoning Traces from Proprietary LLM APIs",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces/#atom-everything'})"
+    },
+    {
+      "item_title": "PrimeIntellect-ai/prime-agent",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'PrimeIntellect-ai', 'repo': 'prime-agent'})"
+    },
+    {
+      "item_title": "msitarzewski/agency-agents",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'msitarzewski', 'repo': 'agency-agents'})"
+    },
+    {
+      "item_title": "cathrynlavery/diagram-design",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'cathrynlavery', 'repo': 'diagram-design'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 13136,
+  "duration_seconds": 53.557228803634644
+}
