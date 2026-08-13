@@ -1,0 +1,61 @@
+{
+  "date": "2026-08-13",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "cathrynlavery/diagram-design",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'cathrynlavery', 'repo': 'diagram-design'})"
+    },
+    {
+      "item_title": "msitarzewski/agency-agents",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'msitarzewski', 'repo': 'agency-agents'})"
+    },
+    {
+      "item_title": "stablyai/orca",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'stablyai', 'repo': 'orca'})"
+    },
+    {
+      "item_title": "DeepSeek V4 Pro 0813 (on OpenRouter)",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/12/deepseek-v4-pro-0813/'})"
+    },
+    {
+      "item_title": "alchemy-utils 0.1a0",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/12/alchemy-utils/'})"
+    },
+    {
+      "item_title": "Quoting Florian Herrengt",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/12/florian-herrengt/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 14415,
+  "duration_seconds": 55.46336102485657
+}
