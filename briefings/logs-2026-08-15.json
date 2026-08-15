@@ -1,0 +1,45 @@
+{
+  "date": "2026-08-15",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "semantica-agi/semantica",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'semantica-agi', 'repo': 'semantica'})"
+    },
+    {
+      "item_title": "holaboss-ai/holaOS",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'holaboss-ai', 'repo': 'holaOS'})"
+    },
+    {
+      "item_title": "Don't classify. Hallucinate!",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/14/dont-classify-hallucinate/'})"
+    },
+    {
+      "item_title": "sqlite-utils 4.2.1",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/13/sqlite-utils-2/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12229,
+  "duration_seconds": 51.90392756462097
+}
