@@ -1,0 +1,53 @@
+{
+  "date": "2026-08-16",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "cathrynlavery/diagram-design",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'cathrynlavery', 'repo': 'diagram-design'})"
+    },
+    {
+      "item_title": "cactus-compute/needle",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'cactus-compute', 'repo': 'needle'})"
+    },
+    {
+      "item_title": "citrolabs/ego-lite",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'citrolabs', 'repo': 'ego-lite'})"
+    },
+    {
+      "item_title": "CORS Chat",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/15/cors-chat/'})"
+    },
+    {
+      "item_title": "Don't classify. Hallucinate!",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/14/dont-classify-hallucinate/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12833,
+  "duration_seconds": 52.398934841156006
+}
