@@ -1,0 +1,45 @@
+{
+  "date": "2026-08-17",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "cactus-compute/needle",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'cactus-compute', 'repo': 'needle'})"
+    },
+    {
+      "item_title": "Markdown SVG upgrades",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/16/markdown-svg-upgrades/'})"
+    },
+    {
+      "item_title": "Qwen 3.8 27B is excellent, but it defaults to wildly overthinking things",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/16/qwen-38-27b/'})"
+    },
+    {
+      "item_title": "Quoting Dario Amodei",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/16/dario-amodei/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12260,
+  "duration_seconds": 60.50074744224548
+}
