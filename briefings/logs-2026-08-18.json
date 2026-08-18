@@ -1,0 +1,53 @@
+{
+  "date": "2026-08-18",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "Qwen 3.8 27B scores 52 on the Artificial Analysis Intelligence Index",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/17/qwen-38-27b-scores-52/'})"
+    },
+    {
+      "item_title": "We Tracked a Shipment of Rare Books. It Ended at an Amazon AI Training Facility",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/17/we-tracked-a-shipment-of-rare-books-it-ended-at-an-amazon-ai-tra/'})"
+    },
+    {
+      "item_title": "Markdown SVG upgrades",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/16/markdown-svg-upgrades/'})"
+    },
+    {
+      "item_title": "usestrix/strix",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'usestrix', 'repo': 'strix'})"
+    },
+    {
+      "item_title": "santifer/career-ops",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'santifer', 'repo': 'career-ops'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 14052,
+  "duration_seconds": 60.59022855758667
+}
