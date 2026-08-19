@@ -1,0 +1,45 @@
+{
+  "date": "2026-08-19",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "Mojo🔥 is now open source",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/18/mojo-is-now-open-source/'})"
+    },
+    {
+      "item_title": "Qwen 3.8 27B scores 52 on the Artificial Analysis Intelligence Index",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/17/qwen-38-27b-scores-52/'})"
+    },
+    {
+      "item_title": "We Tracked a Shipment of Rare Books. It Ended at an Amazon AI Training Facility",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/17/we-tracked-a-shipment-of-rare-books-it-ended-at-an-amazon-ai-tra/'})"
+    },
+    {
+      "item_title": "akitaonrails/ai-memory",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'akitaonrails', 'repo': 'ai-memory'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 13032,
+  "duration_seconds": 57.329453468322754
+}
