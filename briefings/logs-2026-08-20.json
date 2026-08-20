@@ -1,0 +1,45 @@
+{
+  "date": "2026-08-20",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "mattpocock/skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'mattpocock', 'repo': 'skills'})"
+    },
+    {
+      "item_title": "volcengine/OpenViking",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'volcengine', 'repo': 'OpenViking'})"
+    },
+    {
+      "item_title": "smolmachines / smolvm as a sandbox for untrusted Python & JavaScript",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/19/smolmachines-untrusted-sandbox/'})"
+    },
+    {
+      "item_title": "Conceptual integrity and counting lines of code",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/19/conceptual-integrity-and-counting-lines-of-code/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12613,
+  "duration_seconds": 49.925472259521484
+}
