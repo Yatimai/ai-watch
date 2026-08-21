@@ -1,0 +1,53 @@
+{
+  "date": "2026-08-21",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "mattpocock/skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'mattpocock', 'repo': 'skills'})"
+    },
+    {
+      "item_title": "volcengine/OpenViking",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'volcengine', 'repo': 'OpenViking'})"
+    },
+    {
+      "item_title": "ChatGPT search now uses the site:operator at scale",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/20/chatgpt-search-now-uses-the-siteoperator-at-scale/'})"
+    },
+    {
+      "item_title": "A shot-scraper-style JSON API on Bun 1.4's new Bun.WebView",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/20/bun-webview-json-api/'})"
+    },
+    {
+      "item_title": "smolmachines / smolvm as a sandbox for untrusted Python & JavaScript",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/19/smolmachines-untrusted-sandbox/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 13798,
+  "duration_seconds": 55.31222367286682
+}
