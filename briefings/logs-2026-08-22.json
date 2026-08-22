@@ -1,0 +1,53 @@
+{
+  "date": "2026-08-22",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "mattpocock/skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'mattpocock', 'repo': 'skills'})"
+    },
+    {
+      "item_title": "santifer/career-ops",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'santifer', 'repo': 'career-ops'})"
+    },
+    {
+      "item_title": "llm 0.32.1",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/21/llm/'})"
+    },
+    {
+      "item_title": "llm-openrouter 0.7",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/21/llm-openrouter/'})"
+    },
+    {
+      "item_title": "Stop Making TUIs",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/21/stop-making-tuis/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12246,
+  "duration_seconds": 52.50412940979004
+}
