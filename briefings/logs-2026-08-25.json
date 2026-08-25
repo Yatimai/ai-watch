@@ -1,0 +1,53 @@
+{
+  "date": "2026-08-25",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "NousResearch/hermes-agent",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'NousResearch', 'repo': 'hermes-agent'})"
+    },
+    {
+      "item_title": "freestylefly/awesome-gpt-image-2",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'freestylefly', 'repo': 'awesome-gpt-image-2'})"
+    },
+    {
+      "item_title": "llm-anthropic 0.27",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/24/llm-anthropic/'})"
+    },
+    {
+      "item_title": "Anthropic’s best AI model struggles to attract users as cheaper tools thrive",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/23/anthropics-best-ai-model-struggles-to-attract-users-as-cheaper-t/'})"
+    },
+    {
+      "item_title": "Your executable is a SQLite database",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/24/your-executable-is-a-sqlite-database/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12929,
+  "duration_seconds": 55.2100088596344
+}
