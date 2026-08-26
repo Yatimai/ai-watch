@@ -1,0 +1,53 @@
+{
+  "date": "2026-08-26",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "freestylefly/awesome-gpt-image-2",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'freestylefly', 'repo': 'awesome-gpt-image-2'})"
+    },
+    {
+      "item_title": "MadsLorentzen/ai-job-search",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'MadsLorentzen', 'repo': 'ai-job-search'})"
+    },
+    {
+      "item_title": "EVE Online: The Move to Python 3 Begins!",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/25/eve-online-move-to-python-3/'})"
+    },
+    {
+      "item_title": "llm-anthropic 0.27",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/24/llm-anthropic/'})"
+    },
+    {
+      "item_title": "{'url': 'https://simonwillison.net/2026/Aug/24/your-executable-is-a-sqlite-database'}",
+      "source": "huggingface",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/24/your-executable-is-a-sqlite-database'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12902,
+  "duration_seconds": 53.76712131500244
+}
