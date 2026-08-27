@@ -1,0 +1,61 @@
+{
+  "date": "2026-08-27",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "tt-a1i/archify",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'tt-a1i', 'repo': 'archify'})"
+    },
+    {
+      "item_title": "freestylefly/awesome-gpt-image-2",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'freestylefly', 'repo': 'awesome-gpt-image-2'})"
+    },
+    {
+      "item_title": "DietrichGebert/ponytail",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'DietrichGebert', 'repo': 'ponytail'})"
+    },
+    {
+      "item_title": "Qwen3.8-Flash-Next",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/26/qwen38-flash-next/'})"
+    },
+    {
+      "item_title": "Quoting Paul Dix",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/26/paul-dix/'})"
+    },
+    {
+      "item_title": "EVE Online: The Move to Python 3 Begins!",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/25/eve-online-move-to-python-3/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 13515,
+  "duration_seconds": 74.0927460193634
+}
