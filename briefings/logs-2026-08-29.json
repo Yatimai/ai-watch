@@ -1,0 +1,53 @@
+{
+  "date": "2026-08-29",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "tt-a1i/archify",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'tt-a1i', 'repo': 'archify'})"
+    },
+    {
+      "item_title": "DietrichGebert/ponytail",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'DietrichGebert', 'repo': 'ponytail'})"
+    },
+    {
+      "item_title": "Just a rumour of a bug is enough to find a security exploit these days",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/28/just-a-rumour-of-a-bug/'})"
+    },
+    {
+      "item_title": "Breaking Claude Code Opus 5 Auto Mode",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode/'})"
+    },
+    {
+      "item_title": "Qwen3.8-Flash-Next",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/26/qwen38-flash-next/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 13462,
+  "duration_seconds": 58.844311237335205
+}
