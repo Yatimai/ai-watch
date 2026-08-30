@@ -1,0 +1,61 @@
+{
+  "date": "2026-08-30",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "tt-a1i/archify",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'tt-a1i', 'repo': 'archify'})"
+    },
+    {
+      "item_title": "K-Dense-AI/scientific-agent-skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'K-Dense-AI', 'repo': 'scientific-agent-skills'})"
+    },
+    {
+      "item_title": "THU-MAIC/OpenMAIC",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'THU-MAIC', 'repo': 'OpenMAIC'})"
+    },
+    {
+      "item_title": "Introducing Hy4 Preview",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/29/hy4/'})"
+    },
+    {
+      "item_title": "Just a rumour of a bug is enough to find a security exploit these days",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/28/just-a-rumour-of-a-bug/'})"
+    },
+    {
+      "item_title": "Breaking Claude Code Opus 5 Auto Mode",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 14725,
+  "duration_seconds": 59.324759006500244
+}
