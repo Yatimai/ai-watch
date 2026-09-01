@@ -1,0 +1,45 @@
+{
+  "date": "2026-09-01",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "THU-MAIC/OpenMAIC",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'THU-MAIC', 'repo': 'OpenMAIC'})"
+    },
+    {
+      "item_title": "K-Dense-AI/scientific-agent-skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'K-Dense-AI', 'repo': 'scientific-agent-skills'})"
+    },
+    {
+      "item_title": "Introducing wrapture",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/31/introducing-wrapture/'})"
+    },
+    {
+      "item_title": "Understanding ChatGPT Work",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 13247,
+  "duration_seconds": 52.80815076828003
+}
