@@ -1,0 +1,61 @@
+{
+  "date": "2026-09-02",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "DietrichGebert/ponytail",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'DietrichGebert', 'repo': 'ponytail'})"
+    },
+    {
+      "item_title": "mattpocock/skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'mattpocock', 'repo': 'skills'})"
+    },
+    {
+      "item_title": "pacifio/atlas",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'pacifio', 'repo': 'atlas'})"
+    },
+    {
+      "item_title": "Quoting Rick Brewster",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Sep/2/rick-brewster/'})"
+    },
+    {
+      "item_title": "Claude Fable 5.1 made me a really nice animated pelican",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Sep/1/claude-fable-5-1/'})"
+    },
+    {
+      "item_title": "Codex bundles LibreOffice",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Sep/1/codex-libreoffice/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 14243,
+  "duration_seconds": 62.93758797645569
+}
