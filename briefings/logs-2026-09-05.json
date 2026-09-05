@@ -1,0 +1,53 @@
+{
+  "date": "2026-09-05",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "mattpocock/skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'mattpocock', 'repo': 'skills'})"
+    },
+    {
+      "item_title": "DietrichGebert/ponytail",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'DietrichGebert', 'repo': 'ponytail'})"
+    },
+    {
+      "item_title": "humanlayer/skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'humanlayer', 'repo': 'skills'})"
+    },
+    {
+      "item_title": "The Pelican comparison grid for Astra is pretty interesting",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Sep/4/astra-pelicans/'})"
+    },
+    {
+      "item_title": "OpenAI's rogue agents were caught communicating via public wikis",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Sep/4/rogue-agent-wikis/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12716,
+  "duration_seconds": 52.82351016998291
+}
