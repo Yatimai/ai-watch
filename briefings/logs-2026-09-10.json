@@ -1,0 +1,61 @@
+{
+  "date": "2026-09-10",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "ayghri/i-have-adhd",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'ayghri', 'repo': 'i-have-adhd'})"
+    },
+    {
+      "item_title": "cathrynlavery/diagram-design",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'cathrynlavery', 'repo': 'diagram-design'})"
+    },
+    {
+      "item_title": "THU-MAIC/OpenMAIC",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'THU-MAIC', 'repo': 'OpenMAIC'})"
+    },
+    {
+      "item_title": "Quoting Calif Research",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Sep/10/calif-research/'})"
+    },
+    {
+      "item_title": ".blend URL Viewer",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Sep/9/blender-viewer/'})"
+    },
+    {
+      "item_title": "Quoting Terence Tao",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Sep/9/terence-tao/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 14054,
+  "duration_seconds": 67.65666961669922
+}
