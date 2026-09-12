@@ -1,0 +1,53 @@
+{
+  "date": "2026-09-12",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "alsk1992/CloddsBot",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'alsk1992', 'repo': 'CloddsBot'})"
+    },
+    {
+      "item_title": "vxcontrol/pentagi",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'vxcontrol', 'repo': 'pentagi'})"
+    },
+    {
+      "item_title": "OpenAI agents attacked RubyGems back in May",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Sep/12/openai-agents-rubygems/'})"
+    },
+    {
+      "item_title": "So you want to use OpenRouter?",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Sep/11/so-you-want-to-use-openrouter/'})"
+    },
+    {
+      "item_title": "Quoting Boris Cherny",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Sep/11/boris-cherny/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 13513,
+  "duration_seconds": 66.3503839969635
+}
