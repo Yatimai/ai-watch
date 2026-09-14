@@ -1,0 +1,45 @@
+{
+  "date": "2026-09-14",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "debpalash/VoiceStudio",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'debpalash', 'repo': 'VoiceStudio'})"
+    },
+    {
+      "item_title": "JustVugg/colibri",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'JustVugg', 'repo': 'colibri'})"
+    },
+    {
+      "item_title": "commit-rewriter 0.1",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Sep/14/commit-rewriter/'})"
+    },
+    {
+      "item_title": "Generating running routes with GPT-6 Astra and ChatGPT Work",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Sep/12/astra-running-routes/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12963,
+  "duration_seconds": 55.263288259506226
+}
