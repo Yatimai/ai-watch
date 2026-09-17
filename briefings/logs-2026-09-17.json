@@ -1,0 +1,53 @@
+{
+  "date": "2026-09-17",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "cloudflare/security-audit-skill",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'cloudflare', 'repo': 'security-audit-skill'})"
+    },
+    {
+      "item_title": "alibaba/open-code-review",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'alibaba', 'repo': 'open-code-review'})"
+    },
+    {
+      "item_title": "Tencent/BrowserSkill",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'Tencent', 'repo': 'BrowserSkill'})"
+    },
+    {
+      "item_title": "datasette 1.0a40",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Sep/16/datasette/'})"
+    },
+    {
+      "item_title": "Claude Cowork and chat are now one Claude",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Sep/16/one-claude/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12264,
+  "duration_seconds": 48.575653076171875
+}
