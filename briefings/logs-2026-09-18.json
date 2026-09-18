@@ -1,0 +1,61 @@
+{
+  "date": "2026-09-18",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "cloudflare/security-audit-skill",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'cloudflare', 'repo': 'security-audit-skill'})"
+    },
+    {
+      "item_title": "alibaba/open-code-review",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'alibaba', 'repo': 'open-code-review'})"
+    },
+    {
+      "item_title": "Tencent/BrowserSkill",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'Tencent', 'repo': 'BrowserSkill'})"
+    },
+    {
+      "item_title": "Be alert: targeted attacks on prominent Rustaceans",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Sep/17/targeted-attacks-on-rustaceans/'})"
+    },
+    {
+      "item_title": "How To Write With An LLM",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Sep/17/how-to-write-with-an-llm/'})"
+    },
+    {
+      "item_title": "Self-generated prompt injections in compaction summaries",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Sep/17/compaction-summaries/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 13528,
+  "duration_seconds": 54.90360140800476
+}
