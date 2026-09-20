@@ -1,0 +1,53 @@
+{
+  "date": "2026-09-20",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "cloudflare/security-audit-skill",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'cloudflare', 'repo': 'security-audit-skill'})"
+    },
+    {
+      "item_title": "affaan-m/ECC",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'affaan-m', 'repo': 'ECC'})"
+    },
+    {
+      "item_title": "trycua/cua",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'trycua', 'repo': 'cua'})"
+    },
+    {
+      "item_title": "datasette-auth-github 1.0",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Sep/19/datasette-auth-github/'})"
+    },
+    {
+      "item_title": "Gemini Hacked Three Companies in First Known Breakout by Google’s AI",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Sep/18/gemini-hacked-three-companies/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 13321,
+  "duration_seconds": 51.94647407531738
+}
