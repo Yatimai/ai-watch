@@ -1,0 +1,53 @@
+{
+  "date": "2026-09-22",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "google/ax",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'google', 'repo': 'ax'})"
+    },
+    {
+      "item_title": "agent-substrate/substrate",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'agent-substrate', 'repo': 'substrate'})"
+    },
+    {
+      "item_title": "anthropics/financial-services",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'anthropics', 'repo': 'financial-services'})"
+    },
+    {
+      "item_title": "Jev introduces a new shape of LLM - System One, aka Decision Models",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Sep/21/jev/'})"
+    },
+    {
+      "item_title": "Quoting voxium",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Sep/20/voxium/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12259,
+  "duration_seconds": 55.61140704154968
+}
