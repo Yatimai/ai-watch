@@ -1,0 +1,53 @@
+{
+  "date": "2026-09-23",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "google/ax",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'google', 'repo': 'ax'})"
+    },
+    {
+      "item_title": "browser-use/video-use",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'browser-use', 'repo': 'video-use'})"
+    },
+    {
+      "item_title": "anthropics/financial-services",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'anthropics', 'repo': 'financial-services'})"
+    },
+    {
+      "item_title": "Claude Opus 5.5, GPT-6 Sol, GPT-6 Luna, and a new price war",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/'})"
+    },
+    {
+      "item_title": "llm 0.36",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Sep/22/llm/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 13415,
+  "duration_seconds": 53.79823851585388
+}
