@@ -1,0 +1,61 @@
+{
+  "date": "2026-09-30",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "debpalash/VoiceStudio",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'debpalash', 'repo': 'VoiceStudio'})"
+    },
+    {
+      "item_title": "NVIDIA/OpenShell",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'NVIDIA', 'repo': 'OpenShell'})"
+    },
+    {
+      "item_title": "VectifyAI/PageIndex",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'VectifyAI', 'repo': 'PageIndex'})"
+    },
+    {
+      "item_title": "Quoting Anthropic Frontier Red Team",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Sep/29/anthropic-frontier-red-team/'})"
+    },
+    {
+      "item_title": "OpenAI DevDay 2026 live blog",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Sep/29/openai-devday-2026-live-blog/'})"
+    },
+    {
+      "item_title": "GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Sep/29/hn-49898129/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 14392,
+  "duration_seconds": 62.65434002876282
+}
