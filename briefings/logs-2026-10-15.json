@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-15",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "morluto/rea",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'morluto', 'repo': 'rea'})"
+    },
+    {
+      "item_title": "debpalash/VoiceStudio",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'debpalash', 'repo': 'VoiceStudio'})"
+    },
+    {
+      "item_title": "K-Dense-AI/scientific-agent-skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'K-Dense-AI', 'repo': 'scientific-agent-skills'})"
+    },
+    {
+      "item_title": "Tree Appreciator",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Oct/14/tree-appreciator/'})"
+    },
+    {
+      "item_title": "AI is mass decompiling games. That's both awesome and scary.",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Oct/14/ai-is-mass-decompiling-games/'})"
+    },
+    {
+      "item_title": "Redesigning source control at Anthropic",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 14698,
+  "duration_seconds": 61.41417169570923
+}
