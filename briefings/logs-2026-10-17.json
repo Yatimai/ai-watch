@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-17",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "debpalash/VoiceStudio",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'debpalash', 'repo': 'VoiceStudio'})"
+    },
+    {
+      "item_title": "MadsLorentzen/ai-job-search",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'MadsLorentzen', 'repo': 'ai-job-search'})"
+    },
+    {
+      "item_title": "anthropics/claude-plugins-official",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'anthropics', 'repo': 'claude-plugins-official'})"
+    },
+    {
+      "item_title": "Quoting Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Oct/16/code-review/'})"
+    },
+    {
+      "item_title": "Chirp Pong",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Oct/15/chirp-pong/'})"
+    },
+    {
+      "item_title": "Anthropic tells investors quarterly revenue up nearly 50% to $16.8bn ahead of IPO",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 14262,
+  "duration_seconds": 57.3733446598053
+}
