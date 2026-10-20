@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-20",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "MadsLorentzen/ai-job-search",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'MadsLorentzen', 'repo': 'ai-job-search'})"
+    },
+    {
+      "item_title": "stablyai/orca",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'stablyai', 'repo': 'orca'})"
+    },
+    {
+      "item_title": "anomalyco/opencode",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'anomalyco', 'repo': 'opencode'})"
+    },
+    {
+      "item_title": "My obituary for programming",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Oct/19/my-obituary-for-programming/'})"
+    },
+    {
+      "item_title": "llm-tools-datasette 0.1.1",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Oct/18/llm-tools-datasette/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 10668,
+  "duration_seconds": 47.198418617248535
+}
