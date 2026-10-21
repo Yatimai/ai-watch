@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-21",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "MadsLorentzen/ai-job-search",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'MadsLorentzen', 'repo': 'ai-job-search'})"
+    },
+    {
+      "item_title": "DietrichGebert/ponytail",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'DietrichGebert', 'repo': 'ponytail'})"
+    },
+    {
+      "item_title": "cloudflare/security-audit-skill",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'cloudflare', 'repo': 'security-audit-skill'})"
+    },
+    {
+      "item_title": "eMudhra Intermediate CA Compromise",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Oct/20/emudhra-certificates/'})"
+    },
+    {
+      "item_title": "Battle Drones - a vibe coded RTS with audio-based multiplayer",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Oct/20/battledrones/'})"
+    },
+    {
+      "item_title": "My obituary for programming",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Oct/19/my-obituary-for-programming/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 13751,
+  "duration_seconds": 61.17688846588135
+}
