@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-22",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "cloudflare/security-audit-skill",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'cloudflare', 'repo': 'security-audit-skill'})"
+    },
+    {
+      "item_title": "DietrichGebert/ponytail",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'DietrichGebert', 'repo': 'ponytail'})"
+    },
+    {
+      "item_title": "Graphify-Labs/graphify",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'Graphify-Labs', 'repo': 'graphify'})"
+    },
+    {
+      "item_title": "Today's PHP Security Release, and How We're Strengthening PHP Security",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Oct/21/php-security-release/'})"
+    },
+    {
+      "item_title": "eMudhra Intermediate CA Compromise",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Oct/20/emudhra-certificates/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12801,
+  "duration_seconds": 52.887197971343994
+}
