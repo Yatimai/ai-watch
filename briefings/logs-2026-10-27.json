@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-27",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "Nutlope/hallmark",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'Nutlope', 'repo': 'hallmark'})"
+    },
+    {
+      "item_title": "HKUDS/DeepTutor",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'HKUDS', 'repo': 'DeepTutor'})"
+    },
+    {
+      "item_title": "pbakaus/impeccable",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'pbakaus', 'repo': 'impeccable'})"
+    },
+    {
+      "item_title": "GPT-6.1 Terra",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Oct/26/gpt-61-terra/'})"
+    },
+    {
+      "item_title": "Quoting Jason Koebler",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Oct/26/jason-koebler/'})"
+    },
+    {
+      "item_title": "webframe: evaluated as a scraper and a sandbox",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Oct/26/webframe-evaluation/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 13849,
+  "duration_seconds": 59.813451528549194
+}
