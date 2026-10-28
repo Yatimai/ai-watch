@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-28",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "HKUDS/DeepTutor",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'HKUDS', 'repo': 'DeepTutor'})"
+    },
+    {
+      "item_title": "Nutlope/hallmark",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'Nutlope', 'repo': 'hallmark'})"
+    },
+    {
+      "item_title": "Quoting Terk Terkowitz",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Oct/28/terk-terkowitz/'})"
+    },
+    {
+      "item_title": "GPT-6.1 Terra",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Oct/26/gpt-61-terra/'})"
+    },
+    {
+      "item_title": "Game Boy Color on My Conference Badge",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Oct/27/game-boy-color-on-my-conference-badge/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12740,
+  "duration_seconds": 53.373151540756226
+}
