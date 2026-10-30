@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-30",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "pbakaus/impeccable",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'pbakaus', 'repo': 'impeccable'})"
+    },
+    {
+      "item_title": "HKUDS/DeepTutor",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'HKUDS', 'repo': 'DeepTutor'})"
+    },
+    {
+      "item_title": "API credits benefit for eligible ChatGPT subscriptions",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Oct/29/api-credits/'})"
+    },
+    {
+      "item_title": "Building a multiplayer game world with autonomous Fable-class models",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world/'})"
+    },
+    {
+      "item_title": "Quoting Ben Hylak",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Oct/29/ben-hylak/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12763,
+  "duration_seconds": 57.85178065299988
+}
