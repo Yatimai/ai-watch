@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-03",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "vercel-labs/agent-desktop",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'vercel-labs', 'repo': 'agent-desktop'})"
+    },
+    {
+      "item_title": "mattpocock/skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'mattpocock', 'repo': 'skills'})"
+    },
+    {
+      "item_title": "I discovered a sound that leaks your exact location (and it's everywhere) - YouTube",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Nov/3/a-sound-that-leaks-your-exact-location/'})"
+    },
+    {
+      "item_title": "llm 0.37",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Nov/2/llm/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12244,
+  "duration_seconds": 54.6550977230072
+}
