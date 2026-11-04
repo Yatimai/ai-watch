@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-04",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "vercel-labs/agent-desktop",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'vercel-labs', 'repo': 'agent-desktop'})"
+    },
+    {
+      "item_title": "mattpocock/skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'mattpocock', 'repo': 'skills'})"
+    },
+    {
+      "item_title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/'})"
+    },
+    {
+      "item_title": "I discovered a sound that leaks your exact location (and it's everywhere) - YouTube",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Nov/3/a-sound-that-leaks-your-exact-location/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 11792,
+  "duration_seconds": 50.44660043716431
+}
