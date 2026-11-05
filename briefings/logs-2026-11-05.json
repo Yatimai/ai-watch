@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-05",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "NVIDIA/auto-ontology",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'NVIDIA', 'repo': 'auto-ontology'})"
+    },
+    {
+      "item_title": "vercel-labs/agent-desktop",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'vercel-labs', 'repo': 'agent-desktop'})"
+    },
+    {
+      "item_title": "mattpocock/skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'mattpocock', 'repo': 'skills'})"
+    },
+    {
+      "item_title": "datasette-llm 0.1a10",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Nov/4/datasette-llm/'})"
+    },
+    {
+      "item_title": "datasette-agent 0.5a0",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Nov/3/datasette-agent/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 11754,
+  "duration_seconds": 53.102330923080444
+}
