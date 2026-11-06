@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-06",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "cloudflare/security-audit-skill",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'cloudflare', 'repo': 'security-audit-skill'})"
+    },
+    {
+      "item_title": "mattpocock/skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'mattpocock', 'repo': 'skills'})"
+    },
+    {
+      "item_title": "NVIDIA/auto-ontology",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'NVIDIA', 'repo': 'auto-ontology'})"
+    },
+    {
+      "item_title": "Quoting Paul Ford",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Nov/5/paul-ford/'})"
+    },
+    {
+      "item_title": "datasette-llm 0.1a10",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Nov/4/datasette-llm/'})"
+    },
+    {
+      "item_title": "datasette-apps 0.3a0",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Nov/4/datasette-apps/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12597,
+  "duration_seconds": 55.01692867279053
+}
