@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-07",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "cloudflare/security-audit-skill",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'cloudflare', 'repo': 'security-audit-skill'})"
+    },
+    {
+      "item_title": "milind-soni/OpenMausBot",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'milind-soni', 'repo': 'OpenMausBot'})"
+    },
+    {
+      "item_title": "mattpocock/skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'mattpocock', 'repo': 'skills'})"
+    },
+    {
+      "item_title": "Quoting Nilay Patel",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Nov/6/nilay-patel/'})"
+    },
+    {
+      "item_title": "datasette-llm 0.1a10",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Nov/4/datasette-llm/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12211,
+  "duration_seconds": 50.44593811035156
+}
