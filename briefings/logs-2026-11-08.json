@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-08",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "milind-soni/OpenMausBot",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'milind-soni', 'repo': 'OpenMausBot'})"
+    },
+    {
+      "item_title": "vercel-labs/agent-browser",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'vercel-labs', 'repo': 'agent-browser'})"
+    },
+    {
+      "item_title": "anthropics/skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'anthropics', 'repo': 'skills'})"
+    },
+    {
+      "item_title": "datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Nov/7/link-rel-next/'})"
+    },
+    {
+      "item_title": "Quoting Nilay Patel",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Nov/6/nilay-patel/'})"
+    },
+    {
+      "item_title": "Quoting Paul Ford",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Nov/5/paul-ford/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12926,
+  "duration_seconds": 54.69264769554138
+}
