@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-09",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "milind-soni/OpenMausBot",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'milind-soni', 'repo': 'OpenMausBot'})"
+    },
+    {
+      "item_title": "anthropics/skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'anthropics', 'repo': 'skills'})"
+    },
+    {
+      "item_title": "vercel-labs/agent-browser",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'vercel-labs', 'repo': 'agent-browser'})"
+    },
+    {
+      "item_title": "The Web Is More Than Enough, by Paul Ford",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Nov/9/hn-50421091/'})"
+    },
+    {
+      "item_title": "Hide your slop PR descriptions behind <details><summary>",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Nov/9/details-summary/'})"
+    },
+    {
+      "item_title": "parse_number() as a SQLite extension: C vs Rust",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 14059,
+  "duration_seconds": 57.944839000701904
+}
