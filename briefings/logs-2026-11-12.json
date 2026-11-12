@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-12",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "addyosmani/agent-skills",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'addyosmani', 'repo': 'agent-skills'})"
+    },
+    {
+      "item_title": "Alishahryar1/free-claude-code",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'Alishahryar1', 'repo': 'free-claude-code'})"
+    },
+    {
+      "item_title": "Gemini Decisions API",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Nov/11/gemini-decisions-api/'})"
+    },
+    {
+      "item_title": "aws-emulator",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Nov/11/aws-emulator/'})"
+    },
+    {
+      "item_title": "Browse tools.simonwillison.net by tag",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Nov/11/tools-tags/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 13626,
+  "duration_seconds": 55.39402627944946
+}
