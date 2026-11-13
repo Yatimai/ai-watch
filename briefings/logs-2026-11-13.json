@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-13",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "GoogleChrome/modern-web-guidance-src",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'GoogleChrome', 'repo': 'modern-web-guidance-src'})"
+    },
+    {
+      "item_title": "ZhuLinsen/daily_stock_analysis",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'ZhuLinsen', 'repo': 'daily_stock_analysis'})"
+    },
+    {
+      "item_title": "llm-gemini 0.37",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Nov/12/llm-gemini/'})"
+    },
+    {
+      "item_title": "Gemini Decisions API",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Nov/11/gemini-decisions-api/'})"
+    },
+    {
+      "item_title": "aws-emulator",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Nov/11/aws-emulator/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 13616,
+  "duration_seconds": 54.740347385406494
+}
