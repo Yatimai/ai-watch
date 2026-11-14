@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-14",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "GoogleChrome/modern-web-guidance-src",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'GoogleChrome', 'repo': 'modern-web-guidance-src'})"
+    },
+    {
+      "item_title": "ChromeDevTools/chrome-devtools-mcp",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'ChromeDevTools', 'repo': 'chrome-devtools-mcp'})"
+    },
+    {
+      "item_title": "llm-gemini 0.37",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Nov/12/llm-gemini/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 11255,
+  "duration_seconds": 49.729159355163574
+}
