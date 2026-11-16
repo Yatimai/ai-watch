@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-16",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "datasette-maplibre 0.1a0",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Nov/15/datasette-maplibre/'})"
+    },
+    {
+      "item_title": "datasette 1.0a43",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Nov/15/datasette/'})"
+    },
+    {
+      "item_title": "dream-num/univer",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'dream-num', 'repo': 'univer'})"
+    },
+    {
+      "item_title": "NVIDIA/SkillEvaluator",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'NVIDIA', 'repo': 'SkillEvaluator'})"
+    },
+    {
+      "item_title": "alibaba/open-code-review",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'alibaba', 'repo': 'open-code-review'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 13858,
+  "duration_seconds": 54.62504267692566
+}
