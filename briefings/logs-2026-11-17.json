@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-17",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "obra/superpowers",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'obra', 'repo': 'superpowers'})"
+    },
+    {
+      "item_title": "ag-ui-protocol/ag-ui",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'ag-ui-protocol', 'repo': 'ag-ui'})"
+    },
+    {
+      "item_title": "llm 0.37.3",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Nov/16/llm/'})"
+    },
+    {
+      "item_title": "datasette-maplibre 0.1a0",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Nov/15/datasette-maplibre/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12023,
+  "duration_seconds": 53.9582359790802
+}
