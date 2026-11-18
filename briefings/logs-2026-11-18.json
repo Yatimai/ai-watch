@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-18",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "elementalsouls/Claude-BugHunter",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'elementalsouls', 'repo': 'Claude-BugHunter'})"
+    },
+    {
+      "item_title": "google-research/paper-orchestra",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'google-research', 'repo': 'paper-orchestra'})"
+    },
+    {
+      "item_title": "affaan-m/ECC",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'affaan-m', 'repo': 'ECC'})"
+    },
+    {
+      "item_title": "Quoting Daniel Stenberg",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Nov/18/daniel-stenberg/'})"
+    },
+    {
+      "item_title": "External sandboxes for coding agents",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 13114,
+  "duration_seconds": 58.8305778503418
+}
