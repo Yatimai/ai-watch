@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-19",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "obra/superpowers",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'obra', 'repo': 'superpowers'})"
+    },
+    {
+      "item_title": "elementalsouls/Claude-BugHunter",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'elementalsouls', 'repo': 'Claude-BugHunter'})"
+    },
+    {
+      "item_title": "llm-gemini 0.38",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Nov/18/llm-gemini/'})"
+    },
+    {
+      "item_title": "Quoting Daniel Stenberg",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Nov/18/daniel-stenberg/'})"
+    },
+    {
+      "item_title": "datasette-arrows 0.1a0",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Nov/18/datasette-arrows/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 12294,
+  "duration_seconds": 57.13858914375305
+}
