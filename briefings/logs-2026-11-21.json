@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-21",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "elementalsouls/Claude-BugHunter",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'elementalsouls', 'repo': 'Claude-BugHunter'})"
+    },
+    {
+      "item_title": "obra/superpowers",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'obra', 'repo': 'superpowers'})"
+    },
+    {
+      "item_title": "Quoting Levent Alpöge",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Nov/20/levent-alpoge/'})"
+    },
+    {
+      "item_title": "Token fraud is here and it’s BAD (YouTube)",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad/'})"
+    },
+    {
+      "item_title": "Quoting Ravi Vakil",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Nov/20/ravi-vakil/'})"
+    }
+  ],
+  "llm_calls": 3,
+  "total_tokens": 19168,
+  "duration_seconds": 53.28840637207031
+}
