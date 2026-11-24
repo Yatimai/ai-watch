@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-24",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "elementalsouls/Claude-BugHunter",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'elementalsouls', 'repo': 'Claude-BugHunter'})"
+    },
+    {
+      "item_title": "HKUDS/CLI-Anything",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'HKUDS', 'repo': 'CLI-Anything'})"
+    },
+    {
+      "item_title": "obra/superpowers",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'obra', 'repo': 'superpowers'})"
+    },
+    {
+      "item_title": "GPT 6.2 Astra Solves a Historical Mystery",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Nov/24/astra-historical-mystery/'})"
+    },
+    {
+      "item_title": "datasette-charts 0.2a0",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Nov/24/datasette-charts/'})"
+    },
+    {
+      "item_title": "datasette-agent 0.7a1",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Nov/24/datasette-agent/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 14347,
+  "duration_seconds": 58.079816818237305
+}
