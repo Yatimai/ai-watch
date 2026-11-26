@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-26",
+  "sources_status": {
+    "huggingface": "ok",
+    "github": "ok",
+    "simon": "ok"
+  },
+  "enrichment": [
+    {
+      "item_title": "elementalsouls/Claude-BugHunter",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'elementalsouls', 'repo': 'Claude-BugHunter'})"
+    },
+    {
+      "item_title": "obra/superpowers",
+      "source": "github",
+      "tools_called": [
+        "get_github_repo"
+      ],
+      "reason": "get_github_repo({'owner': 'obra', 'repo': 'superpowers'})"
+    },
+    {
+      "item_title": "Quoting Jack Despain Zhou",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Nov/26/jack-despain-zhou/'})"
+    },
+    {
+      "item_title": "sqlite3_rsync: Database Remote-Copy Tool For SQLite",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Nov/26/sqlite3-rsync/'})"
+    },
+    {
+      "item_title": "The New York Times warns photographers not to update Photoshop over AI features",
+      "source": "simon",
+      "tools_called": [
+        "fetch_url"
+      ],
+      "reason": "fetch_url({'url': 'https://simonwillison.net/2026/Nov/26/hn-50651685/'})"
+    }
+  ],
+  "llm_calls": 2,
+  "total_tokens": 13118,
+  "duration_seconds": 58.825881004333496
+}
